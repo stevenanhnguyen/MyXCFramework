@@ -1,0 +1,11 @@
+framework module MyXCFramework {
+  umbrella header "MyXCFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module MyXCFramework.Swift {
+  header "MyXCFramework-Swift.h"
+  requires objc
+}
