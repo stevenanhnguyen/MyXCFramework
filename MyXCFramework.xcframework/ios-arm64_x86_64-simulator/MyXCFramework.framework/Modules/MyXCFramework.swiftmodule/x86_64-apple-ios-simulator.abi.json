@@ -16,13 +16,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "User",
-        "printedName": "User",
+        "name": "LoginRequest",
+        "printedName": "LoginRequest",
         "children": [
           {
             "kind": "Var",
-            "name": "username",
-            "printedName": "username",
+            "name": "email",
+            "printedName": "email",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -32,8 +32,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13MyXCFramework4UserV8usernameSSvp",
-            "mangledName": "$s13MyXCFramework4UserV8usernameSSvp",
+            "usr": "s:13MyXCFramework12LoginRequestV5emailSSvp",
+            "mangledName": "$s13MyXCFramework12LoginRequestV5emailSSvp",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "HasStorage",
@@ -55,8 +55,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13MyXCFramework4UserV8usernameSSvg",
-                "mangledName": "$s13MyXCFramework4UserV8usernameSSvg",
+                "usr": "s:13MyXCFramework12LoginRequestV5emailSSvg",
+                "mangledName": "$s13MyXCFramework12LoginRequestV5emailSSvg",
                 "moduleName": "MyXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -76,8 +76,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13MyXCFramework4UserV8passwordSSvp",
-            "mangledName": "$s13MyXCFramework4UserV8passwordSSvp",
+            "usr": "s:13MyXCFramework12LoginRequestV8passwordSSvp",
+            "mangledName": "$s13MyXCFramework12LoginRequestV8passwordSSvp",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "HasStorage",
@@ -99,39 +99,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13MyXCFramework4UserV8passwordSSvg",
-                "mangledName": "$s13MyXCFramework4UserV8passwordSSvg",
+                "usr": "s:13MyXCFramework12LoginRequestV8passwordSSvg",
+                "mangledName": "$s13MyXCFramework12LoginRequestV8passwordSSvg",
                 "moduleName": "MyXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "User",
-                "printedName": "MyXCFramework.User",
-                "usr": "s:13MyXCFramework4UserV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13MyXCFramework4UserV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13MyXCFramework4UserV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "MyXCFramework",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -151,8 +125,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13MyXCFramework4UserV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13MyXCFramework4UserV6encode2toys7Encoder_p_tKF",
+            "usr": "s:13MyXCFramework12LoginRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13MyXCFramework12LoginRequestV6encode2toys7Encoder_p_tKF",
             "moduleName": "MyXCFramework",
             "implicit": true,
             "throwing": true,
@@ -160,20 +134,13 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:13MyXCFramework4UserV",
-        "mangledName": "$s13MyXCFramework4UserV",
+        "usr": "s:13MyXCFramework12LoginRequestV",
+        "mangledName": "$s13MyXCFramework12LoginRequestV",
         "moduleName": "MyXCFramework",
         "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -190,19 +157,19 @@
         "children": [
           {
             "kind": "Var",
-            "name": "token",
-            "printedName": "token",
+            "name": "success",
+            "printedName": "success",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:13MyXCFramework13LoginResponseV5tokenSSvp",
-            "mangledName": "$s13MyXCFramework13LoginResponseV5tokenSSvp",
+            "usr": "s:13MyXCFramework13LoginResponseV7successSbvp",
+            "mangledName": "$s13MyXCFramework13LoginResponseV7successSbvp",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "HasStorage",
@@ -218,14 +185,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13MyXCFramework13LoginResponseV5tokenSSvg",
-                "mangledName": "$s13MyXCFramework13LoginResponseV5tokenSSvg",
+                "usr": "s:13MyXCFramework13LoginResponseV7successSbvg",
+                "mangledName": "$s13MyXCFramework13LoginResponseV7successSbvg",
                 "moduleName": "MyXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -234,8 +201,8 @@
           },
           {
             "kind": "Var",
-            "name": "email",
-            "printedName": "email",
+            "name": "message",
+            "printedName": "message",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -245,8 +212,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13MyXCFramework13LoginResponseV5emailSSvp",
-            "mangledName": "$s13MyXCFramework13LoginResponseV5emailSSvp",
+            "usr": "s:13MyXCFramework13LoginResponseV7messageSSvp",
+            "mangledName": "$s13MyXCFramework13LoginResponseV7messageSSvp",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "HasStorage",
@@ -268,8 +235,52 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13MyXCFramework13LoginResponseV5emailSSvg",
-                "mangledName": "$s13MyXCFramework13LoginResponseV5emailSSvg",
+                "usr": "s:13MyXCFramework13LoginResponseV7messageSSvg",
+                "mangledName": "$s13MyXCFramework13LoginResponseV7messageSSvg",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoginData",
+                "printedName": "MyXCFramework.LoginData",
+                "usr": "s:13MyXCFramework9LoginDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework13LoginResponseV4dataAA0C4DataVvp",
+            "mangledName": "$s13MyXCFramework13LoginResponseV4dataAA0C4DataVvp",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginData",
+                    "printedName": "MyXCFramework.LoginData",
+                    "usr": "s:13MyXCFramework9LoginDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework13LoginResponseV4dataAA0C4DataVvg",
+                "mangledName": "$s13MyXCFramework13LoginResponseV4dataAA0C4DataVvg",
                 "moduleName": "MyXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -301,31 +312,6 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13MyXCFramework13LoginResponseV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13MyXCFramework13LoginResponseV6encode2toys7Encoder_p_tKF",
-            "moduleName": "MyXCFramework",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -342,13 +328,143 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoginData",
+        "printedName": "LoginData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework9LoginDataV5tokenSSvp",
+            "mangledName": "$s13MyXCFramework9LoginDataV5tokenSSvp",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework9LoginDataV5tokenSSvg",
+                "mangledName": "$s13MyXCFramework9LoginDataV5tokenSSvg",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework9LoginDataV5emailSSvp",
+            "mangledName": "$s13MyXCFramework9LoginDataV5emailSSvp",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework9LoginDataV5emailSSvg",
+                "mangledName": "$s13MyXCFramework9LoginDataV5emailSSvg",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoginData",
+                "printedName": "MyXCFramework.LoginData",
+                "usr": "s:13MyXCFramework9LoginDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework9LoginDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13MyXCFramework9LoginDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MyXCFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework9LoginDataV",
+        "mangledName": "$s13MyXCFramework9LoginDataV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },

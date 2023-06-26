@@ -7,12 +7,18 @@
 
 import Foundation
 
-public struct User: Codable {
-    public let username: String
+public struct LoginRequest: Encodable {
+    public let email: String
     public let password: String
 }
 
-public struct LoginResponse: Codable {
+public struct LoginResponse: Decodable {
+    public let success: Bool
+    public let message: String
+    public let data: LoginData
+}
+
+public struct LoginData: Decodable {
     public let token: String
     public let email: String
 }

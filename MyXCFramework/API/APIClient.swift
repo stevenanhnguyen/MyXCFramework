@@ -14,7 +14,7 @@ public class APIClient {
     
     public func post<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
         let requestURL = URL(string: baseURL + endpoint.path)!
-        
+        print("URL: ", requestURL)
         var request = URLRequest(url: requestURL)
         request.httpMethod = "POST"
         

@@ -7,16 +7,20 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct User : Swift.Codable {
-  public let username: Swift.String
+public struct LoginRequest : Swift.Encodable {
+  public let email: Swift.String
   public let password: Swift.String
   public func encode(to encoder: Swift.Encoder) throws
+}
+public struct LoginResponse : Swift.Decodable {
+  public let success: Swift.Bool
+  public let message: Swift.String
+  public let data: MyXCFramework.LoginData
   public init(from decoder: Swift.Decoder) throws
 }
-public struct LoginResponse : Swift.Codable {
+public struct LoginData : Swift.Decodable {
   public let token: Swift.String
   public let email: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 public class UserAuthentication {
