@@ -12,40 +12,34 @@ public struct User: Codable {
     public let password: String
 }
 
-public struct UserAuthenticationResponse: Codable {
+public struct LoginResponse: Codable {
     public let token: String
     public let user: User
 }
 
-public protocol APIClientProtocol {
-    func post(endpoint: String, parameters: [String: Any], completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void)
-    func get(endpoint: String, parameters: [String: Any], completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void)
-}
-
 public class UserAuthentication {
-    private let apiClient: APIClientProtocol
+    private let apiClient: APIClient
 
-    public init(apiClient: APIClientProtocol) {
+    public init(apiClient: APIClient) {
         self.apiClient = apiClient
     }
 
-    public func login(user: User, completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void) {
-        let endpoint = "/login"
+    public func login(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
+        let endpoint = APIPath.login
+        
         let parameters: [String: Any] = [
-            "username": user.username,
-            "password": user.password
+            "username": username,
+            "password": password
         ]
         
-        apiClient.post(endpoint: endpoint, parameters: parameters) { result in
-            completion(result)
+        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<LoginResponse, APIError>) in
+            switch result {
+            case .success(let response):
+                completion(.success(response))
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
     }
     
-    public func getUserInfo(completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void) {
-        let endpoint = "/user/info"
-        
-        apiClient.get(endpoint: endpoint, parameters: [:]) { result in
-            completion(result)
-        }
-    }
 }

@@ -13,20 +13,15 @@ public struct User : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public struct UserAuthenticationResponse : Swift.Codable {
+public struct LoginResponse : Swift.Codable {
   public let token: Swift.String
   public let user: MyXCFramework.User
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public protocol APIClientProtocol {
-  func post(endpoint: Swift.String, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<MyXCFramework.UserAuthenticationResponse, MyXCFramework.APIError>) -> Swift.Void)
-  func get(endpoint: Swift.String, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<MyXCFramework.UserAuthenticationResponse, MyXCFramework.APIError>) -> Swift.Void)
-}
 public class UserAuthentication {
-  public init(apiClient: MyXCFramework.APIClientProtocol)
-  public func login(user: MyXCFramework.User, completion: @escaping (Swift.Result<MyXCFramework.UserAuthenticationResponse, MyXCFramework.APIError>) -> Swift.Void)
-  public func getUserInfo(completion: @escaping (Swift.Result<MyXCFramework.UserAuthenticationResponse, MyXCFramework.APIError>) -> Swift.Void)
+  public init(apiClient: MyXCFramework.APIClient)
+  public func login(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.LoginResponse, MyXCFramework.APIError>) -> Swift.Void)
   @objc deinit
 }
 public enum APIPath {
@@ -46,7 +41,8 @@ public struct APIResponse {
 }
 public class APIClient {
   public init()
-  public func authenticate(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.AuthenticationToken, MyXCFramework.AuthenticationError>) -> Swift.Void)
+  public func post<T>(endpoint: MyXCFramework.APIPath, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<T, MyXCFramework.APIError>) -> Swift.Void) where T : Swift.Decodable
+  public func get<T>(endpoint: MyXCFramework.APIPath, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<T, MyXCFramework.APIError>) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
 public struct AuthenticationToken {

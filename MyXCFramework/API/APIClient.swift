@@ -12,7 +12,7 @@ public class APIClient {
     
     public init() {}
     
-    private func post<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
+    public func post<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
         let requestURL = URL(string: baseURL + endpoint.path)!
         
         var request = URLRequest(url: requestURL)
@@ -46,7 +46,7 @@ public class APIClient {
         }.resume()
     }
     
-    private func get<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
+    public func get<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
         let requestURL = URL(string: baseURL + endpoint.path)!
         
         var request = URLRequest(url: requestURL)
@@ -78,12 +78,5 @@ public class APIClient {
                 completion(.failure(.networkError))
             }
         }.resume()
-    }
-
-    
-    public func authenticate(username: String, password: String, completion: @escaping (Result<AuthenticationToken, AuthenticationError>) -> Void) {
-        // TO DO:
-        
-        
     }
 }
