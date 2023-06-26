@@ -26,12 +26,15 @@ class UserAuthentication {
         ]
         
         apiClient.post(endpoint: .login, parameters: parameters) { result in
+            print("had response")
             switch result {
             case .success:
+                print("had response: success")
                 // Login successful
                 completion(.success(()))
             case .failure(let error):
                 // Login failed
+                print("had response: falure")
                 completion(.failure(error))
             }
         }
