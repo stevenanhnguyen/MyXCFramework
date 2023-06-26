@@ -42,4 +42,21 @@ public class UserAuthentication {
         }
     }
     
+    public func register(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
+        let endpoint = APIPath.register
+        
+        let parameters: [String: Any] = [
+            "username": username,
+            "password": password
+        ]
+        
+        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<LoginResponse, APIError>) in
+            switch result {
+            case .success(let response):
+                completion(.success(response))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

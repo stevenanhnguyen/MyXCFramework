@@ -8,7 +8,7 @@
 import Foundation
 
 public class APIClient {
-    private let baseURL = "https://mk1technology.com"
+    private let baseURL = "https://hnc-admin.mk1technology.vn/api"
     
     public init() {}
     
