@@ -12,7 +12,7 @@ struct User {
     let password: String
 }
 
-class AuthManager {
+class UserAuthentication {
     private let apiClient: APIClient
     
     init(apiClient: APIClient) {
