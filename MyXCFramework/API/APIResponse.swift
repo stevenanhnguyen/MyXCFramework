@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct APIResponse {
-    // Define the structure of the API response data
-    
+public struct APIResponse<T: Decodable>: Decodable {
+    public let success: Bool
+    public let message: String
+    public let data: T?
 }

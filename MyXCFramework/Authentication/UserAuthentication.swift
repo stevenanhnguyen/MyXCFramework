@@ -14,7 +14,7 @@ public struct User: Codable {
 
 public struct LoginResponse: Codable {
     public let token: String
-    public let user: User
+    public let email: String
 }
 
 public class UserAuthentication {
@@ -26,21 +26,26 @@ public class UserAuthentication {
 
     public func login(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
         let endpoint = APIPath.login
-        
         let parameters: [String: Any] = [
             "username": username,
             "password": password
         ]
         
-        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<LoginResponse, APIError>) in
+        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<APIResponse<LoginResponse>, APIError>) in
             switch result {
             case .success(let response):
-                completion(.success(response))
+                if let loginResponse = response.data {
+                    completion(.success(loginResponse))
+                } else {
+                    completion(.failure(.invalidResponse))
+                }
+                
             case .failure(let error):
                 completion(.failure(error))
             }
         }
     }
+
     
     public func register(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
         let endpoint = APIPath.register
