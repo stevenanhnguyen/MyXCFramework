@@ -26,6 +26,7 @@ public class APIClient {
         URLSession.shared.dataTask(with: request) { data, response, error in
             // Handle response and errors
             guard let data = data, let httpResponse = response as? HTTPURLResponse else {
+                print("test 1")
                 completion(.failure(.networkError))
                 return
             }
@@ -41,6 +42,7 @@ public class APIClient {
                 }
             } else {
                 // Error response
+                print("test 2")
                 completion(.failure(.networkError))
             }
         }.resume()

@@ -15,19 +15,19 @@ public struct User : Swift.Codable {
 }
 public struct LoginResponse : Swift.Codable {
   public let token: Swift.String
-  public let user: MyXCFramework.User
+  public let email: Swift.String
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 public class UserAuthentication {
   public init(apiClient: MyXCFramework.APIClient)
   public func login(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.LoginResponse, MyXCFramework.APIError>) -> Swift.Void)
+  public func register(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.LoginResponse, MyXCFramework.APIError>) -> Swift.Void)
   @objc deinit
 }
 public enum APIPath {
   case login
   case register
-  case logout
   public var path: Swift.String {
     get
   }
@@ -37,7 +37,11 @@ public enum APIPath {
     get
   }
 }
-public struct APIResponse {
+public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let success: Swift.Bool
+  public let message: Swift.String
+  public let data: T?
+  public init(from decoder: Swift.Decoder) throws
 }
 public class APIClient {
   public init()
