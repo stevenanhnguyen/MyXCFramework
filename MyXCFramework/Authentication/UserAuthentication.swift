@@ -7,67 +7,45 @@
 
 import Foundation
 
-struct User {
-    let username: String
-    let password: String
+public struct User: Codable {
+    public let username: String
+    public let password: String
 }
 
-class UserAuthentication {
-    private let apiClient: APIClient
-    
-    init(apiClient: APIClient) {
+public struct UserAuthenticationResponse: Codable {
+    public let token: String
+    public let user: User
+}
+
+public protocol APIClientProtocol {
+    func post(endpoint: String, parameters: [String: Any], completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void)
+    func get(endpoint: String, parameters: [String: Any], completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void)
+}
+
+public class UserAuthentication {
+    private let apiClient: APIClientProtocol
+
+    public init(apiClient: APIClientProtocol) {
         self.apiClient = apiClient
     }
-    
-    func login(user: User, completion: @escaping (Result<Void, Error>) -> Void) {
-        let parameters = [
+
+    public func login(user: User, completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void) {
+        let endpoint = "/login"
+        let parameters: [String: Any] = [
             "username": user.username,
             "password": user.password
         ]
         
-        apiClient.post(endpoint: .login, parameters: parameters) { result in
-            print("had response")
-            switch result {
-            case .success:
-                print("had response: success")
-                // Login successful
-                completion(.success(()))
-            case .failure(let error):
-                // Login failed
-                print("had response: falure")
-                completion(.failure(error))
-            }
+        apiClient.post(endpoint: endpoint, parameters: parameters) { result in
+            completion(result)
         }
     }
     
-    func register(user: User, completion: @escaping (Result<Void, Error>) -> Void) {
-        let parameters = [
-            "username": user.username,
-            "password": user.password
-        ]
+    public func getUserInfo(completion: @escaping (Result<UserAuthenticationResponse, MyXCFramework.APIError>) -> Void) {
+        let endpoint = "/user/info"
         
-        apiClient.post(endpoint: .register, parameters: parameters) { result in
-            switch result {
-            case .success:
-                // Registration successful
-                completion(.success(()))
-            case .failure(let error):
-                // Registration failed
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    func logout(completion: @escaping (Result<Void, Error>) -> Void) {
-        apiClient.get(endpoint: .logout) { result in
-            switch result {
-            case .success:
-                // Logout successful
-                completion(.success(()))
-            case .failure(let error):
-                // Logout failed
-                completion(.failure(error))
-            }
+        apiClient.get(endpoint: endpoint, parameters: [:]) { result in
+            completion(result)
         }
     }
 }

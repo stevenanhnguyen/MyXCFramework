@@ -8,6 +8,6 @@
 import Foundation
 
 public enum APIError: Error {
-    // Define various API-related errors
-    
+    case networkError
+    case invalidResponse
 }
