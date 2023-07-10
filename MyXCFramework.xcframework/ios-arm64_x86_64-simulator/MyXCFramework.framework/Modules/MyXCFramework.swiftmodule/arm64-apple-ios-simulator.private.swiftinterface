@@ -7,37 +7,20 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct LoginRequest : Swift.Encodable {
-  public let email: Swift.String
-  public let password: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
-}
 public struct LoginResponse : Swift.Decodable {
-  public let success: Swift.Bool
-  public let message: Swift.String
-  public let data: MyXCFramework.LoginData
   public init(from decoder: Swift.Decoder) throws
 }
-public struct LoginData : Swift.Decodable {
-  public let token: Swift.String
-  public let email: Swift.String
-  public init(from decoder: Swift.Decoder) throws
-}
-public class UserAuthentication {
-  public init(apiClient: MyXCFramework.APIClient)
-  public func login(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.LoginResponse, MyXCFramework.APIError>) -> Swift.Void)
-  public func register(username: Swift.String, password: Swift.String, completion: @escaping (Swift.Result<MyXCFramework.LoginResponse, MyXCFramework.APIError>) -> Swift.Void)
+public class UserAuthenClass {
+  public init()
   @objc deinit
 }
-public enum APIPath {
+public enum APIPath : Swift.String {
   case login
   case register
-  public var path: Swift.String {
-    get
-  }
-  public static func == (a: MyXCFramework.APIPath, b: MyXCFramework.APIPath) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -47,26 +30,10 @@ public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
   public let data: T?
   public init(from decoder: Swift.Decoder) throws
 }
-public class APIClient {
-  public init()
-  public func post<T>(endpoint: MyXCFramework.APIPath, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<T, MyXCFramework.APIError>) -> Swift.Void) where T : Swift.Decodable
-  public func get<T>(endpoint: MyXCFramework.APIPath, parameters: [Swift.String : Any], completion: @escaping (Swift.Result<T, MyXCFramework.APIError>) -> Swift.Void) where T : Swift.Decodable
-  @objc deinit
-}
 public struct AuthenticationToken {
 }
 public enum AuthenticationError : Swift.Error {
 }
-public enum APIError : Swift.Error {
-  case networkError
-  case invalidResponse
-  public static func == (a: MyXCFramework.APIError, b: MyXCFramework.APIError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 extension MyXCFramework.APIPath : Swift.Equatable {}
 extension MyXCFramework.APIPath : Swift.Hashable {}
-extension MyXCFramework.APIError : Swift.Equatable {}
-extension MyXCFramework.APIError : Swift.Hashable {}
+extension MyXCFramework.APIPath : Swift.RawRepresentable {}

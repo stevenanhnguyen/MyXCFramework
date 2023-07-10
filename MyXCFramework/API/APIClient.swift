@@ -7,78 +7,129 @@
 
 import Foundation
 
-public class APIClient {
-    private let baseURL = "https://hnc-admin.mk1technology.vn/api"
-    
-    public init() {}
-    
-    public func post<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
-        let requestURL = URL(string: baseURL + endpoint.path)!
-        print("URL: ", requestURL)
-        var request = URLRequest(url: requestURL)
-        request.httpMethod = "POST"
+typealias Parameters = [String: Any]
+typealias HTTPHeaders = [String: String]
+let TimeoutDefault: TimeInterval = 30
+
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
+
+enum BaseURL: String {
+    case dev = "https://hnc-admin.mk1technology.vn/api"
+}
+
+protocol API {
+    var baseURL: BaseURL { get }
+    var path: APIPath { get }
+    var parameters: Parameters? { get }
+    var expandPath: String? { get }
+    var method: HTTPMethod { get }
+    var headers: HTTPHeaders? { get }
+}
+
+extension API {
+    var baseURL: BaseURL { return .dev }
+    var path: APIPath { return .unknown }
+    var parameters: Parameters? { return nil }
+    var expandPath: String? { return nil }
+    var method: HTTPMethod { return .get }
+    var headers: HTTPHeaders? { return nil }
+}
+
+struct HeaderValue {
+    static let applicationJson = "application/json"
+    static let applicationFormData = "application/x-www-form-urlencoded"
+}
+
+struct HeaderKey {
+    static let Accept              = "Accept"
+    static let ContentType         = "Content-Type"
+    static let Authorization       = "Authorization"
+}
+
+extension API {
+    func request<T: Decodable>(of type: T.Type = T.self,
+                               queue: DispatchQueue = .main,
+                               decoder: JSONDecoder = JSONDecoder(),
+                               timeout: TimeInterval = TimeoutDefault,
+                               showPopup: Bool = true,
+                               completion: @escaping (T?, Error?) -> Void) {
+        let url = URL(string: baseURL.rawValue + path.rawValue)!
+        print("URL", url)
         
-        // Set request body
-        let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
-        request.httpBody = jsonData
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        request.setValue(HeaderValue.applicationJson, forHTTPHeaderField: HeaderKey.ContentType)
         
-        // Perform the network request using URLSession
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            // Handle response and errors
-            guard let data = data, let httpResponse = response as? HTTPURLResponse else {
-                print("test 1")
-                completion(.failure(.networkError))
+        if let parameters = parameters {
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: parameters)
+                request.httpBody = jsonData
+            } catch {
+                completion(nil, error)
+                return
+            }
+        }
+        
+        if let headers = headers {
+            for (key, value) in headers {
+                request.setValue(value, forHTTPHeaderField: key)
+            }
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                completion(nil, error)
                 return
             }
             
-            if (200..<300).contains(httpResponse.statusCode) {
-                // Successful response
-                let decoder = JSONDecoder()
-                do {
-                    let result: T = try decoder.decode(T.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    completion(.failure(.invalidResponse))
-                }
-            } else {
-                // Error response
-                print("test 2")
-                completion(.failure(.networkError))
+            guard let data = data else {
+                completion(nil, APIError.invalidResponse)
+                return
             }
-        }.resume()
+            
+            log(responseData: data, response: response)
+            do {
+                let result = try decoder.decode(T.self, from: data)
+                completion(result, nil)
+            } catch {
+                completion(nil, error)
+            }
+        }
+        task.resume()
     }
     
-    public func get<T: Decodable>(endpoint: APIPath, parameters: [String: Any], completion: @escaping (Result<T, APIError>) -> Void) {
-        let requestURL = URL(string: baseURL + endpoint.path)!
-        
-        var request = URLRequest(url: requestURL)
-        request.httpMethod = "GET"
-        
-        // Set request body
-        let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
-        request.httpBody = jsonData
-        
-        // Perform the network request using URLSession
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            // Handle response and errors
-            guard let data = data, let httpResponse = response as? HTTPURLResponse else {
-                completion(.failure(.networkError))
-                return
-            }
-            
-            if (200..<300).contains(httpResponse.statusCode) {
-                // Successful response
-                let decoder = JSONDecoder()
-                do {
-                    let result: T = try decoder.decode(T.self, from: data)
-                    completion(.success(result))
-                } catch {
-                    completion(.failure(.invalidResponse))
-                }
+    func send<T: Decodable>(of type: T.Type = T.self,
+                            queue: DispatchQueue = .main,
+                            decoder: JSONDecoder = JSONDecoder(),
+                            timeout: TimeInterval = TimeoutDefault,
+                            showPopup: Bool = true,
+                            completion: @escaping (APIResponse<T>?, Error?) -> Void) {
+        request(of: APIResponse<T>.self, queue: queue, decoder: decoder, timeout: timeout, showPopup: showPopup) { response, error in
+            if let response = response {
+                completion(response, nil)
+            } else if let error = error {
+                completion(nil, error)
             } else {
-                // Error response
-                completion(.failure(.networkError))
+                completion(nil, APIError.invalidResponse)
             }
-        }.resume()
+        }
+    }
+    
+    public func log(responseData data: Data?, response: URLResponse?) {
+        guard let data = data else { return }
+        if let dataDict = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+            print("responseData: \(String(describing: dataDict))")
+        }
+    }
+}
+
+extension Dictionary where Key == String, Value == Any {
+    mutating func addParam(_ key: String, value: Value?) {
+        if let valueObj = value {
+            updateValue(valueObj, forKey: key)
+        }
     }
 }

@@ -7,16 +7,9 @@
 
 import Foundation
 
-public enum APIPath {
-    case login
-    case register
+public enum APIPath: String {
+    case login = "/login"
+    case register = "/register"
     
-    public var path: String {
-        switch self {
-        case .login:
-            return "/login"
-        case .register:
-            return "/register"
-        }
-    }
+    case unknown = ""
 }

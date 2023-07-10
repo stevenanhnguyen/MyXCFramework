@@ -7,67 +7,63 @@
 
 import Foundation
 
-public struct LoginRequest: Encodable {
-    public let email: String
-    public let password: String
-}
-
 public struct LoginResponse: Decodable {
-    public let success: Bool
-    public let message: String
-    public let data: LoginData
-}
-
-public struct LoginData: Decodable {
-    public let token: String
-    public let email: String
-}
-
-public class UserAuthentication {
-    private let apiClient: APIClient
-
-    public init(apiClient: APIClient) {
-        self.apiClient = apiClient
-    }
-
-    public func login(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
-        let endpoint = APIPath.login
-        let parameters: [String: Any] = [
-            "username": username,
-            "password": password
-        ]
-        
-        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<APIResponse<LoginResponse>, APIError>) in
-            switch result {
-            case .success(let response):
-                if let loginResponse = response.data {
-                    completion(.success(loginResponse))
-                } else {
-                    completion(.failure(.invalidResponse))
-                }
-                
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-
+    let token: String
+    let email: String
     
-    public func register(username: String, password: String, completion: @escaping (Result<LoginResponse, APIError>) -> Void) {
-        let endpoint = APIPath.register
+    enum CodingKeys: String, CodingKey {
+        case token
+        case email
+    }
+}
+
+struct UserAuthentication: API {
+    var baseUrl: BaseURL { .dev }
+    var path: APIPath { .login }
+    var parameters: Parameters?
+    var method: HTTPMethod { .post }
+    var headers: HTTPHeaders? {
+        let headers = HTTPHeaders()
         
-        let parameters: [String: Any] = [
-            "username": username,
-            "password": password
-        ]
-        
-        apiClient.post(endpoint: endpoint, parameters: parameters) { (result: Result<LoginResponse, APIError>) in
-            switch result {
-            case .success(let response):
-                completion(.success(response))
-            case .failure(let error):
-                completion(.failure(error))
+        return headers
+    }
+    
+    init(params: Parameters? = nil) {
+        parameters = params
+    }
+    
+    func send(queue: DispatchQueue = .main,
+              decoder: JSONDecoder = JSONDecoder(),
+              completion: @escaping (LoginResponse?) -> Void) {
+        send(of: LoginResponse.self, queue: queue, decoder: decoder) { response, error in
+            if let response = response {
+                completion(response.data)
+            } else if let error = error {
+                completion(nil)
             }
         }
     }
 }
+
+public class UserAuthenClass {
+    
+    public init() { }
+    
+    internal func login(email: String, password: String, completion: @escaping (LoginResponse?, APIError?) -> Void) {
+        var param: Parameters = [:]
+        param.addParam("email", value: email)
+        param.addParam("password", value: password)
+        
+        UserAuthentication(params: param).send { [weak self] memberInfo in
+            guard let data = memberInfo else {
+                let error = APIError.invalidResponse
+                completion(nil, error)
+                return
+            }
+            
+            completion(data, nil)
+        }
+    }
+}
+
+

@@ -16,6 +16,7 @@
 		A5F743FE2A459CC600DB6FB1 /* AuthenticationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743FD2A459CC600DB6FB1 /* AuthenticationToken.swift */; };
 		A5F744022A459D0400DB6FB1 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F744012A459D0400DB6FB1 /* APIPath.swift */; };
 		A5F744042A459E9600DB6FB1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */; };
+		A5F9990F2A5B9D8F00814139 /* AuthenFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A5F743FD2A459CC600DB6FB1 /* AuthenticationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationToken.swift; sourceTree = "<group>"; };
 		A5F744012A459D0400DB6FB1 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 		A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */,
+				A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F9990F2A5B9D8F00814139 /* AuthenFunc.swift in Sources */,
 				A5F744042A459E9600DB6FB1 /* UserAuthentication.swift in Sources */,
 				A5F744022A459D0400DB6FB1 /* APIPath.swift in Sources */,
 				A5F743F02A45948700DB6FB1 /* LoginModel.swift in Sources */,
