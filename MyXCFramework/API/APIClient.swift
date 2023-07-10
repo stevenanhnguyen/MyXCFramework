@@ -133,3 +133,22 @@ extension Dictionary where Key == String, Value == Any {
         }
     }
 }
+
+extension HTTPHeaders {
+    mutating func add(name: String, value: String) {
+        self[name] = value
+    }
+    
+    mutating func addAccept() {
+        add(name: HeaderKey.Accept, value: HeaderValue.applicationJson)
+    }
+    
+    mutating func addAuthorization() {
+        let value = "Bearer "
+        add(name: HeaderKey.Authorization, value: value)
+    }
+    
+    mutating func addContentType() {
+        add(name: HeaderKey.ContentType, value: HeaderValue.applicationFormData)
+    }
+}

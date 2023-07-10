@@ -10,6 +10,10 @@ import Foundation
 public enum APIPath: String {
     case login = "/login"
     case register = "/register"
+    case changePassword = "/change_password"
+    case forgotPassword = "/forgot_password"
+    
+    case getUserInfo = "get_user_info"
     
     case unknown = ""
 }

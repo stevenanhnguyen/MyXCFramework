@@ -15,16 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyXCFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "LoginResponse",
         "printedName": "LoginResponse",
@@ -75,8 +65,155 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UserAuthenClass",
-        "printedName": "UserAuthenClass",
+        "name": "RegisterResponse",
+        "printedName": "RegisterResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RegisterResponse",
+                "printedName": "MyXCFramework.RegisterResponse",
+                "usr": "s:13MyXCFramework16RegisterResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework16RegisterResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13MyXCFramework16RegisterResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MyXCFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework16RegisterResponseV",
+        "mangledName": "$s13MyXCFramework16RegisterResponseV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForgotPasswordResponse",
+        "printedName": "ForgotPasswordResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForgotPasswordResponse",
+                "printedName": "MyXCFramework.ForgotPasswordResponse",
+                "usr": "s:13MyXCFramework22ForgotPasswordResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework22ForgotPasswordResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13MyXCFramework22ForgotPasswordResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MyXCFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework22ForgotPasswordResponseV",
+        "mangledName": "$s13MyXCFramework22ForgotPasswordResponseV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChangePasswordResponse",
+        "printedName": "ChangePasswordResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChangePasswordResponse",
+                "printedName": "MyXCFramework.ChangePasswordResponse",
+                "usr": "s:13MyXCFramework22ChangePasswordResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework22ChangePasswordResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13MyXCFramework22ChangePasswordResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MyXCFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework22ChangePasswordResponseV",
+        "mangledName": "$s13MyXCFramework22ChangePasswordResponseV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserAuthentication",
+        "printedName": "UserAuthentication",
         "children": [
           {
             "kind": "Constructor",
@@ -85,14 +222,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UserAuthenClass",
-                "printedName": "MyXCFramework.UserAuthenClass",
-                "usr": "s:13MyXCFramework15UserAuthenClassC"
+                "name": "UserAuthentication",
+                "printedName": "MyXCFramework.UserAuthentication",
+                "usr": "s:13MyXCFramework18UserAuthenticationC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13MyXCFramework15UserAuthenClassCACycfc",
-            "mangledName": "$s13MyXCFramework15UserAuthenClassCACycfc",
+            "usr": "s:13MyXCFramework18UserAuthenticationCACycfc",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationCACycfc",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "AccessControl"
@@ -170,8 +307,271 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13MyXCFramework15UserAuthenClassC5login5email8password10completionySS_SSyAA13LoginResponseVSg_AA8APIErrorOSgtctF",
-            "mangledName": "$s13MyXCFramework15UserAuthenClassC5login5email8password10completionySS_SSyAA13LoginResponseVSg_AA8APIErrorOSgtctF",
+            "usr": "s:13MyXCFramework18UserAuthenticationC5login5email8password10completionySS_SSyAA13LoginResponseVSg_AA8APIErrorOSgtctF",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationC5login5email8password10completionySS_SSyAA13LoginResponseVSg_AA8APIErrorOSgtctF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(name:email:password:pwConfirmation:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.RegisterResponse?, MyXCFramework.APIError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MyXCFramework.RegisterResponse?, MyXCFramework.APIError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.RegisterResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RegisterResponse",
+                            "printedName": "MyXCFramework.RegisterResponse",
+                            "usr": "s:13MyXCFramework16RegisterResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.APIError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "APIError",
+                            "printedName": "MyXCFramework.APIError",
+                            "usr": "s:13MyXCFramework8APIErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework18UserAuthenticationC8register4name5email8password14pwConfirmation10completionySS_S3SyAA16RegisterResponseVSg_AA8APIErrorOSgtctF",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationC8register4name5email8password14pwConfirmation10completionySS_S3SyAA16RegisterResponseVSg_AA8APIErrorOSgtctF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forgotPassword",
+            "printedName": "forgotPassword(email:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.ForgotPasswordResponse?, MyXCFramework.APIError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MyXCFramework.ForgotPasswordResponse?, MyXCFramework.APIError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.ForgotPasswordResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ForgotPasswordResponse",
+                            "printedName": "MyXCFramework.ForgotPasswordResponse",
+                            "usr": "s:13MyXCFramework22ForgotPasswordResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.APIError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "APIError",
+                            "printedName": "MyXCFramework.APIError",
+                            "usr": "s:13MyXCFramework8APIErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework18UserAuthenticationC14forgotPassword5email10completionySS_yAA06ForgotF8ResponseVSg_AA8APIErrorOSgtctF",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationC14forgotPassword5email10completionySS_yAA06ForgotF8ResponseVSg_AA8APIErrorOSgtctF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changePassword",
+            "printedName": "changePassword(password:pwConfirmation:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.ChangePasswordResponse?, MyXCFramework.APIError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MyXCFramework.ChangePasswordResponse?, MyXCFramework.APIError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.ChangePasswordResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ChangePasswordResponse",
+                            "printedName": "MyXCFramework.ChangePasswordResponse",
+                            "usr": "s:13MyXCFramework22ChangePasswordResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.APIError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "APIError",
+                            "printedName": "MyXCFramework.APIError",
+                            "usr": "s:13MyXCFramework8APIErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework18UserAuthenticationC14changePassword8password14pwConfirmation10completionySS_SSyAA06ChangeF8ResponseVSg_AA8APIErrorOSgtctF",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationC14changePassword8password14pwConfirmation10completionySS_SSyAA06ChangeF8ResponseVSg_AA8APIErrorOSgtctF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework18UserAuthenticationC6logoutyyF",
+            "mangledName": "$s13MyXCFramework18UserAuthenticationC6logoutyyF",
             "moduleName": "MyXCFramework",
             "declAttributes": [
               "AccessControl"
@@ -180,11 +580,21 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:13MyXCFramework15UserAuthenClassC",
-        "mangledName": "$s13MyXCFramework15UserAuthenClassC",
+        "usr": "s:13MyXCFramework18UserAuthenticationC",
+        "mangledName": "$s13MyXCFramework18UserAuthenticationC",
         "moduleName": "MyXCFramework",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -274,6 +684,117 @@
             "declKind": "EnumElement",
             "usr": "s:13MyXCFramework7APIPathO8registeryA2CmF",
             "mangledName": "$s13MyXCFramework7APIPathO8registeryA2CmF",
+            "moduleName": "MyXCFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "changePassword",
+            "printedName": "changePassword",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.APIPath.Type) -> MyXCFramework.APIPath",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIPath",
+                    "printedName": "MyXCFramework.APIPath",
+                    "usr": "s:13MyXCFramework7APIPathO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyXCFramework.APIPath.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIPath",
+                        "printedName": "MyXCFramework.APIPath",
+                        "usr": "s:13MyXCFramework7APIPathO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13MyXCFramework7APIPathO14changePasswordyA2CmF",
+            "mangledName": "$s13MyXCFramework7APIPathO14changePasswordyA2CmF",
+            "moduleName": "MyXCFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "forgotPassword",
+            "printedName": "forgotPassword",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.APIPath.Type) -> MyXCFramework.APIPath",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIPath",
+                    "printedName": "MyXCFramework.APIPath",
+                    "usr": "s:13MyXCFramework7APIPathO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyXCFramework.APIPath.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIPath",
+                        "printedName": "MyXCFramework.APIPath",
+                        "usr": "s:13MyXCFramework7APIPathO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13MyXCFramework7APIPathO14forgotPasswordyA2CmF",
+            "mangledName": "$s13MyXCFramework7APIPathO14forgotPasswordyA2CmF",
+            "moduleName": "MyXCFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "getUserInfo",
+            "printedName": "getUserInfo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.APIPath.Type) -> MyXCFramework.APIPath",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIPath",
+                    "printedName": "MyXCFramework.APIPath",
+                    "usr": "s:13MyXCFramework7APIPathO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyXCFramework.APIPath.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIPath",
+                        "printedName": "MyXCFramework.APIPath",
+                        "usr": "s:13MyXCFramework7APIPathO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13MyXCFramework7APIPathO11getUserInfoyA2CmF",
+            "mangledName": "$s13MyXCFramework7APIPathO11getUserInfoyA2CmF",
             "moduleName": "MyXCFramework"
           },
           {
@@ -535,6 +1056,167 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UserInfoResponse",
+        "printedName": "UserInfoResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserInfoResponse",
+                "printedName": "MyXCFramework.UserInfoResponse",
+                "usr": "s:13MyXCFramework16UserInfoResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework16UserInfoResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13MyXCFramework16UserInfoResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MyXCFramework",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework16UserInfoResponseV",
+        "mangledName": "$s13MyXCFramework16UserInfoResponseV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserInfo",
+        "printedName": "UserInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserInfo",
+                "printedName": "MyXCFramework.UserInfo",
+                "usr": "s:13MyXCFramework8UserInfoC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework8UserInfoCACycfc",
+            "mangledName": "$s13MyXCFramework8UserInfoCACycfc",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserInfo",
+            "printedName": "getUserInfo(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyXCFramework.UserInfoResponse?, MyXCFramework.APIError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MyXCFramework.UserInfoResponse?, MyXCFramework.APIError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.UserInfoResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UserInfoResponse",
+                            "printedName": "MyXCFramework.UserInfoResponse",
+                            "usr": "s:13MyXCFramework16UserInfoResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MyXCFramework.APIError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "APIError",
+                            "printedName": "MyXCFramework.APIError",
+                            "usr": "s:13MyXCFramework8APIErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8UserInfoC03getcD010completionyyAA0cD8ResponseVSg_AA8APIErrorOSgtc_tF",
+            "mangledName": "$s13MyXCFramework8UserInfoC03getcD010completionyyAA0cD8ResponseVSg_AA8APIErrorOSgtc_tF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13MyXCFramework8UserInfoC",
+        "mangledName": "$s13MyXCFramework8UserInfoC",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "APIError",
         "printedName": "APIError",
         "children": [
@@ -729,23 +1411,65 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
       "kind": "StringLiteral",
-      "offset": 147,
-      "length": 8,
-      "value": "\"\/login\""
+      "offset": 1371,
+      "length": 12,
+      "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
       "kind": "StringLiteral",
-      "offset": 176,
-      "length": 11,
-      "value": "\"\/register\""
+      "offset": 1409,
+      "length": 12,
+      "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
       "kind": "StringLiteral",
-      "offset": 212,
+      "offset": 1469,
+      "length": 19,
+      "value": "\"profile_photo_url\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1409,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1469,
+      "length": 19,
+      "value": "\"profile_photo_url\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 3446,
+      "length": 19,
+      "value": "\"profile_photo_url\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 3446,
+      "length": 19,
+      "value": "\"profile_photo_url\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Utilities\/GlobalDataHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
       "length": 2,
       "value": "\"\""
     },
@@ -766,7 +1490,70 @@
     {
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
       "kind": "StringLiteral",
-      "offset": 212,
+      "offset": 214,
+      "length": 18,
+      "value": "\"\/change_password\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 18,
+      "value": "\"\/forgot_password\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 15,
+      "value": "\"get_user_info\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 346,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 147,
+      "length": 8,
+      "value": "\"\/login\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 176,
+      "length": 11,
+      "value": "\"\/register\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 18,
+      "value": "\"\/change_password\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 18,
+      "value": "\"\/forgot_password\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 15,
+      "value": "\"get_user_info\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
+      "kind": "StringLiteral",
+      "offset": 346,
       "length": 2,
       "value": "\"\""
     },
@@ -867,6 +1654,90 @@
       "offset": 3340,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 19,
+      "value": "\"email_verified_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 565,
+      "length": 17,
+      "value": "\"current_team_id\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 20,
+      "value": "\"profile_photo_path\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 19,
+      "value": "\"profile_photo_url\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 19,
+      "value": "\"email_verified_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 565,
+      "length": 17,
+      "value": "\"current_team_id\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 20,
+      "value": "\"profile_photo_path\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 19,
+      "value": "\"profile_photo_url\""
     }
   ]
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5EDA1EF2A5BB8A200DB47C9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */; };
+		A5EDA1F22A5BC85700DB47C9 /* GlobalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */; };
 		A5F743682A45493500DB6FB1 /* MyXCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F743672A45493500DB6FB1 /* MyXCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5F743F02A45948700DB6FB1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743EF2A45948700DB6FB1 /* LoginModel.swift */; };
 		A5F743F42A459C3000DB6FB1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743F32A459C3000DB6FB1 /* APIClient.swift */; };
@@ -16,10 +18,11 @@
 		A5F743FE2A459CC600DB6FB1 /* AuthenticationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743FD2A459CC600DB6FB1 /* AuthenticationToken.swift */; };
 		A5F744022A459D0400DB6FB1 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F744012A459D0400DB6FB1 /* APIPath.swift */; };
 		A5F744042A459E9600DB6FB1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */; };
-		A5F9990F2A5B9D8F00814139 /* AuthenFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataHandler.swift; sourceTree = "<group>"; };
 		A5F743642A45493500DB6FB1 /* MyXCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyXCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F743672A45493500DB6FB1 /* MyXCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyXCFramework.h; sourceTree = "<group>"; };
 		A5F743EF2A45948700DB6FB1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -30,7 +33,6 @@
 		A5F743FD2A459CC600DB6FB1 /* AuthenticationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationToken.swift; sourceTree = "<group>"; };
 		A5F744012A459D0400DB6FB1 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 		A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
-		A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5EDA1F02A5BC84100DB47C9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A5F7435A2A45493400DB6FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 		A5F743662A45493500DB6FB1 /* MyXCFramework */ = {
 			isa = PBXGroup;
 			children = (
+				A5EDA1F02A5BC84100DB47C9 /* Utilities */,
 				A5F743F22A459C2700DB6FB1 /* API */,
 				A5F743F12A459C0600DB6FB1 /* Authentication */,
 				A5F743EE2A45947C00DB6FB1 /* Model */,
@@ -83,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */,
-				A5F9990E2A5B9D8F00814139 /* AuthenFunc.swift */,
+				A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -181,14 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5F9990F2A5B9D8F00814139 /* AuthenFunc.swift in Sources */,
 				A5F744042A459E9600DB6FB1 /* UserAuthentication.swift in Sources */,
+				A5EDA1F22A5BC85700DB47C9 /* GlobalDataHandler.swift in Sources */,
 				A5F744022A459D0400DB6FB1 /* APIPath.swift in Sources */,
 				A5F743F02A45948700DB6FB1 /* LoginModel.swift in Sources */,
 				A5F743F62A459C6500DB6FB1 /* APIResponse.swift in Sources */,
 				A5F743F42A459C3000DB6FB1 /* APIClient.swift in Sources */,
 				A5F743FE2A459CC600DB6FB1 /* AuthenticationToken.swift in Sources */,
 				A5F743FC2A459CB300DB6FB1 /* AuthenticationError.swift in Sources */,
+				A5EDA1EF2A5BB8A200DB47C9 /* UserInfo.swift in Sources */,
 				A5F743F82A459C8500DB6FB1 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

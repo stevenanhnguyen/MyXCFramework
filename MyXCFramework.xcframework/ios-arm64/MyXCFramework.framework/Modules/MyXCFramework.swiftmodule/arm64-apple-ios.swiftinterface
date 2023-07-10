@@ -10,14 +10,30 @@ import _StringProcessing
 public struct LoginResponse : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
-public class UserAuthenClass {
+public struct RegisterResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ForgotPasswordResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ChangePasswordResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public class UserAuthentication {
   public init()
   public func login(email: Swift.String, password: Swift.String, completion: @escaping (MyXCFramework.LoginResponse?, MyXCFramework.APIError?) -> Swift.Void)
+  public func register(name: Swift.String, email: Swift.String, password: Swift.String, pwConfirmation: Swift.String, completion: @escaping (MyXCFramework.RegisterResponse?, MyXCFramework.APIError?) -> Swift.Void)
+  public func forgotPassword(email: Swift.String, completion: @escaping (MyXCFramework.ForgotPasswordResponse?, MyXCFramework.APIError?) -> Swift.Void)
+  public func changePassword(password: Swift.String, pwConfirmation: Swift.String, completion: @escaping (MyXCFramework.ChangePasswordResponse?, MyXCFramework.APIError?) -> Swift.Void)
+  public func logout()
   @objc deinit
 }
 public enum APIPath : Swift.String {
   case login
   case register
+  case changePassword
+  case forgotPassword
+  case getUserInfo
   case unknown
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -28,6 +44,14 @@ public enum APIPath : Swift.String {
 public struct AuthenticationToken {
 }
 public enum AuthenticationError : Swift.Error {
+}
+public struct UserInfoResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public class UserInfo {
+  public init()
+  public func getUserInfo(completion: @escaping (MyXCFramework.UserInfoResponse?, MyXCFramework.APIError?) -> Swift.Void)
+  @objc deinit
 }
 public enum APIError : Swift.Error {
   case invalidURL
