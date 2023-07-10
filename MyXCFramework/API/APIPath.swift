@@ -13,7 +13,7 @@ public enum APIPath: String {
     case changePassword = "/change_password"
     case forgotPassword = "/forgot_password"
     
-    case getUserInfo = "get_user_info"
+    case getUserInfo = "/get_user_info"
     
     case unknown = ""
 }

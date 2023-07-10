@@ -1505,13 +1505,13 @@
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
       "kind": "StringLiteral",
       "offset": 306,
-      "length": 15,
-      "value": "\"get_user_info\""
+      "length": 16,
+      "value": "\"\/get_user_info\""
     },
     {
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 347,
       "length": 2,
       "value": "\"\""
     },
@@ -1547,13 +1547,13 @@
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
       "kind": "StringLiteral",
       "offset": 306,
-      "length": 15,
-      "value": "\"get_user_info\""
+      "length": 16,
+      "value": "\"\/get_user_info\""
     },
     {
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 347,
       "length": 2,
       "value": "\"\""
     },

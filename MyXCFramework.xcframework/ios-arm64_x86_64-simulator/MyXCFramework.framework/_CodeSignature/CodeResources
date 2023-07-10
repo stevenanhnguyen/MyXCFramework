@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rm9qpQBzqfWbRk+43/H1APjBq/4=
+		seSaXZMsf6clTeOV3nmAZpIfm4Y=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oFzDSFQf68UaYUuPneRkGACdvL4=
+		Jwxh7Z0sl+zAiuLUFzcF8L+V+jY=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rm9qpQBzqfWbRk+43/H1APjBq/4=
+		seSaXZMsf6clTeOV3nmAZpIfm4Y=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Wdi58U5XZ1D5Nucdsff7RbbWW9w=
+		cSRqxxqCa3ua1+FQNnMZVBNObuw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,11 +89,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rm9qpQBzqfWbRk+43/H1APjBq/4=
+			seSaXZMsf6clTeOV3nmAZpIfm4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			OD1xLVRN62UHoA/yBm3cpdkz+xwrN4r2v/E7L8QHR9s=
+			MMG6Ds+MLk8VjODFcm87wmzThmxu9XuRhNDCEiugtBg=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oFzDSFQf68UaYUuPneRkGACdvL4=
+			Jwxh7Z0sl+zAiuLUFzcF8L+V+jY=
 			</data>
 			<key>hash2</key>
 			<data>
-			gSXnvXOup2zh+xT9rNURrNkZa8833ahJKHSUAqeYEWM=
+			VgtikfCdMWJ2W3ZSJQQzzO7CychZi62hJTpPbIp42gs=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rm9qpQBzqfWbRk+43/H1APjBq/4=
+			seSaXZMsf6clTeOV3nmAZpIfm4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			OD1xLVRN62UHoA/yBm3cpdkz+xwrN4r2v/E7L8QHR9s=
+			MMG6Ds+MLk8VjODFcm87wmzThmxu9XuRhNDCEiugtBg=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wdi58U5XZ1D5Nucdsff7RbbWW9w=
+			cSRqxxqCa3ua1+FQNnMZVBNObuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wwQRh5GWjWsOPCXJD9QmsbybjukvlDV3SWcrZY1fJmg=
+			dYE+DALR5S9YUFinwxCJbF7IMvi88tfXEe1TpvwXMkE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

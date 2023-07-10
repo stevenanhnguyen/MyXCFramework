@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MyXCFramework"
-  spec.version      = "0.7"
+  spec.version      = "0.8"
   spec.summary      = "Framework for iOS and OS X."
   spec.description  = <<-DESC
     A description of your framework goes here.
