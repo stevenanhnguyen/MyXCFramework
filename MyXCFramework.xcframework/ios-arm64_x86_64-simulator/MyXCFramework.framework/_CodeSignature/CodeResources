@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Jwxh7Z0sl+zAiuLUFzcF8L+V+jY=
+		XlRI3MBnBD/mgvt/5rEF9ihKkDg=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cSRqxxqCa3ua1+FQNnMZVBNObuw=
+		QfHbA8KRm27RyyeQDgnOSf+Ue8s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jwxh7Z0sl+zAiuLUFzcF8L+V+jY=
+			XlRI3MBnBD/mgvt/5rEF9ihKkDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			VgtikfCdMWJ2W3ZSJQQzzO7CychZi62hJTpPbIp42gs=
+			k1FflNYMX+OXRadWnEZH2fXnllpa/V7jkauzhn4rJlw=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cSRqxxqCa3ua1+FQNnMZVBNObuw=
+			QfHbA8KRm27RyyeQDgnOSf+Ue8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			dYE+DALR5S9YUFinwxCJbF7IMvi88tfXEe1TpvwXMkE=
+			x8uveTJxhajpG8pcQVV11B5HBmDNoj9WSJKvjd4GKhA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

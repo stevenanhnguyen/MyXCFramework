@@ -42,10 +42,6 @@ struct GetUserInfoAPI: API {
         return headers
     }
     
-    init(params: Parameters? = nil) {
-        parameters = params
-    }
-    
     func send(queue: DispatchQueue = .main,
               decoder: JSONDecoder = JSONDecoder(),
               completion: @escaping (UserInfoResponse?) -> Void) {
@@ -64,8 +60,7 @@ public class UserInfo {
     public init() { }
     
     public func getUserInfo(completion: @escaping (UserInfoResponse?, APIError?) -> Void) {
-        let param: Parameters = [:]
-        GetUserInfoAPI(params: param).send { [weak self] data in
+        GetUserInfoAPI().send { [weak self] data in
             guard let data = data else {
                 let error = APIError.invalidResponse
                 completion(nil, error)
