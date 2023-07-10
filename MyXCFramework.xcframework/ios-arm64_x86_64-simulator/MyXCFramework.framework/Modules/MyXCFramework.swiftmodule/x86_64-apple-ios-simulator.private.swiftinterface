@@ -12,6 +12,7 @@ public struct LoginResponse : Swift.Decodable {
 }
 public class UserAuthenClass {
   public init()
+  public func login(email: Swift.String, password: Swift.String, completion: @escaping (MyXCFramework.LoginResponse?, MyXCFramework.APIError?) -> Swift.Void)
   @objc deinit
 }
 public enum APIPath : Swift.String {
@@ -24,15 +25,15 @@ public enum APIPath : Swift.String {
     get
   }
 }
-public struct APIResponse<T> : Swift.Decodable where T : Swift.Decodable {
-  public let success: Swift.Bool
-  public let message: Swift.String
-  public let data: T?
-  public init(from decoder: Swift.Decoder) throws
-}
 public struct AuthenticationToken {
 }
 public enum AuthenticationError : Swift.Error {
+}
+public enum APIError : Swift.Error {
+  case invalidURL
+  case networkError(Swift.Error)
+  case invalidRequest
+  case invalidResponse
 }
 extension MyXCFramework.APIPath : Swift.Equatable {}
 extension MyXCFramework.APIPath : Swift.Hashable {}

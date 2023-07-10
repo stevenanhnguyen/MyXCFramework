@@ -49,7 +49,7 @@ public class UserAuthenClass {
     
     public init() { }
     
-    internal func login(email: String, password: String, completion: @escaping (LoginResponse?, APIError?) -> Void) {
+    public func login(email: String, password: String, completion: @escaping (LoginResponse?, APIError?) -> Void) {
         var param: Parameters = [:]
         param.addParam("email", value: email)
         param.addParam("password", value: password)
