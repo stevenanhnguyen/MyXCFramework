@@ -230,6 +230,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -250,6 +252,48 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC13MyXCFramework18BaseViewController")
+@interface BaseViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS_NAMED("DynamicFontType")
+@interface DynamicFontType : NSObject
+/// Initializer.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL_NAMED("DynamicFontTypeDelegate")
+@protocol DynamicFontTypeDelegate
+/// A delegation method that is executed when the dynamic type
+/// is changed.
+/// \param dynamicFontType A DynamicFontType.
+///
+- (void)dynamicFontTypeWithDynamicFontType:(DynamicFontType * _Nonnull)dynamicFontType;
+@end
+
+
+SWIFT_CLASS("_TtC13MyXCFramework7LoginVC")
+@interface LoginVC : BaseViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -490,6 +534,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -510,6 +556,48 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC13MyXCFramework18BaseViewController")
+@interface BaseViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS_NAMED("DynamicFontType")
+@interface DynamicFontType : NSObject
+/// Initializer.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL_NAMED("DynamicFontTypeDelegate")
+@protocol DynamicFontTypeDelegate
+/// A delegation method that is executed when the dynamic type
+/// is changed.
+/// \param dynamicFontType A DynamicFontType.
+///
+- (void)dynamicFontTypeWithDynamicFontType:(DynamicFontType * _Nonnull)dynamicFontType;
+@end
+
+
+SWIFT_CLASS("_TtC13MyXCFramework7LoginVC")
+@interface LoginVC : BaseViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 #endif
 #if defined(__cplusplus)
 #endif

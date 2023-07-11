@@ -7,8 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5DE757F2A5CF97B00AF95FD /* IntroductionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DE757D2A5CF97B00AF95FD /* IntroductionVC.storyboard */; };
+		A5DE75802A5CF97B00AF95FD /* IntroductionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE757E2A5CF97B00AF95FD /* IntroductionVC.swift */; };
+		A5DE75842A5CF9B500AF95FD /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75822A5CF9B500AF95FD /* Slide.swift */; };
+		A5DE75852A5CF9B500AF95FD /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DE75832A5CF9B500AF95FD /* Slide.xib */; };
+		A5DE75882A5CFC7F00AF95FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75872A5CFC7F00AF95FD /* BaseViewController.swift */; };
+		A5DE758D2A5CFEAD00AF95FD /* NavigationBarButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE758C2A5CFEAD00AF95FD /* NavigationBarButtonType.swift */; };
+		A5DE75902A5D00E200AF95FD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE758F2A5D00E200AF95FD /* Resource.swift */; };
+		A5DE75922A5D00FD00AF95FD /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75912A5D00FD00AF95FD /* Pattern.swift */; };
+		A5DE75942A5D011100AF95FD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75932A5D011100AF95FD /* Color.swift */; };
+		A5DE75962A5D014F00AF95FD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75952A5D014F00AF95FD /* UIColor+Extension.swift */; };
+		A5DE759E2A5D01F100AF95FD /* DynamicFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75982A5D01F100AF95FD /* DynamicFontType.swift */; };
+		A5DE759F2A5D01F100AF95FD /* YuGothicFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75992A5D01F100AF95FD /* YuGothicFont.swift */; };
+		A5DE75A02A5D01F100AF95FD /* RobotoFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE759A2A5D01F100AF95FD /* RobotoFont.swift */; };
+		A5DE75A12A5D01F100AF95FD /* yugothil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5DE759B2A5D01F100AF95FD /* yugothil.ttf */; };
+		A5DE75A22A5D01F100AF95FD /* yugothib.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5DE759C2A5D01F100AF95FD /* yugothib.ttf */; };
+		A5DE75A32A5D01F100AF95FD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE759D2A5D01F100AF95FD /* Font.swift */; };
+		A5DE75A72A5D039700AF95FD /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75A62A5D039700AF95FD /* SessionManager.swift */; };
+		A5DE75A92A5D03FD00AF95FD /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75A82A5D03FD00AF95FD /* Defaults.swift */; };
+		A5DE75AB2A5D06D400AF95FD /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DE75AA2A5D06D400AF95FD /* asset.xcassets */; };
+		A5DE75AD2A5D07E900AF95FD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75AC2A5D07E900AF95FD /* UIViewController+Extension.swift */; };
+		A5DE75B02A5D081E00AF95FD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75AF2A5D081E00AF95FD /* LoginVC.swift */; };
+		A5DE75EA2A5D10C100AF95FD /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DE75E92A5D10C100AF95FD /* LoginVC.storyboard */; };
+		A5DE75EC2A5D122600AF95FD /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE75EB2A5D122600AF95FD /* BaseNavigationController.swift */; };
 		A5EDA1EF2A5BB8A200DB47C9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */; };
-		A5EDA1F22A5BC85700DB47C9 /* GlobalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */; };
 		A5F743682A45493500DB6FB1 /* MyXCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F743672A45493500DB6FB1 /* MyXCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5F743F02A45948700DB6FB1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743EF2A45948700DB6FB1 /* LoginModel.swift */; };
 		A5F743F42A459C3000DB6FB1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F743F32A459C3000DB6FB1 /* APIClient.swift */; };
@@ -21,8 +43,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5DE757D2A5CF97B00AF95FD /* IntroductionVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IntroductionVC.storyboard; sourceTree = "<group>"; };
+		A5DE757E2A5CF97B00AF95FD /* IntroductionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionVC.swift; sourceTree = "<group>"; };
+		A5DE75822A5CF9B500AF95FD /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		A5DE75832A5CF9B500AF95FD /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		A5DE75872A5CFC7F00AF95FD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5DE758C2A5CFEAD00AF95FD /* NavigationBarButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonType.swift; sourceTree = "<group>"; };
+		A5DE758F2A5D00E200AF95FD /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		A5DE75912A5D00FD00AF95FD /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		A5DE75932A5D011100AF95FD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A5DE75952A5D014F00AF95FD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A5DE75982A5D01F100AF95FD /* DynamicFontType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFontType.swift; sourceTree = "<group>"; };
+		A5DE75992A5D01F100AF95FD /* YuGothicFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuGothicFont.swift; sourceTree = "<group>"; };
+		A5DE759A2A5D01F100AF95FD /* RobotoFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotoFont.swift; sourceTree = "<group>"; };
+		A5DE759B2A5D01F100AF95FD /* yugothil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yugothil.ttf; sourceTree = "<group>"; };
+		A5DE759C2A5D01F100AF95FD /* yugothib.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yugothib.ttf; sourceTree = "<group>"; };
+		A5DE759D2A5D01F100AF95FD /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A5DE75A62A5D039700AF95FD /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A5DE75A82A5D03FD00AF95FD /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		A5DE75AA2A5D06D400AF95FD /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
+		A5DE75AC2A5D07E900AF95FD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A5DE75AF2A5D081E00AF95FD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A5DE75E92A5D10C100AF95FD /* LoginVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
+		A5DE75EB2A5D122600AF95FD /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataHandler.swift; sourceTree = "<group>"; };
 		A5F743642A45493500DB6FB1 /* MyXCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyXCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F743672A45493500DB6FB1 /* MyXCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyXCFramework.h; sourceTree = "<group>"; };
 		A5F743EF2A45948700DB6FB1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -46,10 +90,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5DE757B2A5CF90700AF95FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75AE2A5D081300AF95FD /* Login */,
+				A5DE757C2A5CF91600AF95FD /* Introduction */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DE757C2A5CF91600AF95FD /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75812A5CF9B500AF95FD /* ChildSlide */,
+				A5DE757D2A5CF97B00AF95FD /* IntroductionVC.storyboard */,
+				A5DE757E2A5CF97B00AF95FD /* IntroductionVC.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		A5DE75812A5CF9B500AF95FD /* ChildSlide */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75822A5CF9B500AF95FD /* Slide.swift */,
+				A5DE75832A5CF9B500AF95FD /* Slide.xib */,
+			);
+			path = ChildSlide;
+			sourceTree = "<group>";
+		};
+		A5DE75862A5CFC7100AF95FD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75872A5CFC7F00AF95FD /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A5DE75892A5CFDE900AF95FD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75862A5CFC7100AF95FD /* Base */,
+				A5DE758B2A5CFE9F00AF95FD /* Common */,
+				A5DE757B2A5CF90700AF95FD /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A5DE758A2A5CFE2200AF95FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75952A5D014F00AF95FD /* UIColor+Extension.swift */,
+				A5DE75AC2A5D07E900AF95FD /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5DE758B2A5CFE9F00AF95FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE758C2A5CFEAD00AF95FD /* NavigationBarButtonType.swift */,
+				A5DE75EB2A5D122600AF95FD /* BaseNavigationController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5DE758E2A5D00D100AF95FD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE758F2A5D00E200AF95FD /* Resource.swift */,
+				A5DE75912A5D00FD00AF95FD /* Pattern.swift */,
+				A5DE75932A5D011100AF95FD /* Color.swift */,
+				A5DE75A82A5D03FD00AF95FD /* Defaults.swift */,
+				A5DE75AA2A5D06D400AF95FD /* asset.xcassets */,
+				A5DE75972A5D01F100AF95FD /* DynamicFont */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A5DE75972A5D01F100AF95FD /* DynamicFont */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75982A5D01F100AF95FD /* DynamicFontType.swift */,
+				A5DE75992A5D01F100AF95FD /* YuGothicFont.swift */,
+				A5DE759A2A5D01F100AF95FD /* RobotoFont.swift */,
+				A5DE759B2A5D01F100AF95FD /* yugothil.ttf */,
+				A5DE759C2A5D01F100AF95FD /* yugothib.ttf */,
+				A5DE759D2A5D01F100AF95FD /* Font.swift */,
+			);
+			path = DynamicFont;
+			sourceTree = "<group>";
+		};
+		A5DE75AE2A5D081300AF95FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE75E92A5D10C100AF95FD /* LoginVC.storyboard */,
+				A5DE75AF2A5D081E00AF95FD /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A5EDA1F02A5BC84100DB47C9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A5EDA1F12A5BC85700DB47C9 /* GlobalDataHandler.swift */,
+				A5DE75A62A5D039700AF95FD /* SessionManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -73,10 +216,12 @@
 		A5F743662A45493500DB6FB1 /* MyXCFramework */ = {
 			isa = PBXGroup;
 			children = (
+				A5DE758A2A5CFE2200AF95FD /* Extension */,
+				A5F743EE2A45947C00DB6FB1 /* Model */,
+				A5DE75892A5CFDE900AF95FD /* Scenes */,
 				A5EDA1F02A5BC84100DB47C9 /* Utilities */,
 				A5F743F22A459C2700DB6FB1 /* API */,
-				A5F743F12A459C0600DB6FB1 /* Authentication */,
-				A5F743EE2A45947C00DB6FB1 /* Model */,
+				A5DE758E2A5D00D100AF95FD /* Resource */,
 				A5F743672A45493500DB6FB1 /* MyXCFramework.h */,
 			);
 			path = MyXCFramework;
@@ -90,13 +235,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A5F743F12A459C0600DB6FB1 /* Authentication */ = {
+		A5F743F12A459C0600DB6FB1 /* AuthenticationAPI */ = {
 			isa = PBXGroup;
 			children = (
 				A5F744032A459E9600DB6FB1 /* UserAuthentication.swift */,
 				A5EDA1EE2A5BB8A200DB47C9 /* UserInfo.swift */,
 			);
-			path = Authentication;
+			path = AuthenticationAPI;
 			sourceTree = "<group>";
 		};
 		A5F743F22A459C2700DB6FB1 /* API */ = {
@@ -108,6 +253,7 @@
 				A5F743FB2A459CB300DB6FB1 /* AuthenticationError.swift */,
 				A5F743FD2A459CC600DB6FB1 /* AuthenticationToken.swift */,
 				A5F744012A459D0400DB6FB1 /* APIPath.swift */,
+				A5F743F12A459C0600DB6FB1 /* AuthenticationAPI */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -182,6 +328,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DE757F2A5CF97B00AF95FD /* IntroductionVC.storyboard in Resources */,
+				A5DE75AB2A5D06D400AF95FD /* asset.xcassets in Resources */,
+				A5DE75852A5CF9B500AF95FD /* Slide.xib in Resources */,
+				A5DE75EA2A5D10C100AF95FD /* LoginVC.storyboard in Resources */,
+				A5DE75A12A5D01F100AF95FD /* yugothil.ttf in Resources */,
+				A5DE75A22A5D01F100AF95FD /* yugothib.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,14 +344,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DE75EC2A5D122600AF95FD /* BaseNavigationController.swift in Sources */,
+				A5DE75AD2A5D07E900AF95FD /* UIViewController+Extension.swift in Sources */,
+				A5DE759F2A5D01F100AF95FD /* YuGothicFont.swift in Sources */,
+				A5DE75A72A5D039700AF95FD /* SessionManager.swift in Sources */,
+				A5DE75882A5CFC7F00AF95FD /* BaseViewController.swift in Sources */,
 				A5F744042A459E9600DB6FB1 /* UserAuthentication.swift in Sources */,
-				A5EDA1F22A5BC85700DB47C9 /* GlobalDataHandler.swift in Sources */,
+				A5DE759E2A5D01F100AF95FD /* DynamicFontType.swift in Sources */,
+				A5DE75962A5D014F00AF95FD /* UIColor+Extension.swift in Sources */,
+				A5DE75902A5D00E200AF95FD /* Resource.swift in Sources */,
+				A5DE75942A5D011100AF95FD /* Color.swift in Sources */,
+				A5DE75B02A5D081E00AF95FD /* LoginVC.swift in Sources */,
+				A5DE75A92A5D03FD00AF95FD /* Defaults.swift in Sources */,
+				A5DE75A02A5D01F100AF95FD /* RobotoFont.swift in Sources */,
+				A5DE75802A5CF97B00AF95FD /* IntroductionVC.swift in Sources */,
+				A5DE75842A5CF9B500AF95FD /* Slide.swift in Sources */,
+				A5DE75922A5D00FD00AF95FD /* Pattern.swift in Sources */,
+				A5DE75A32A5D01F100AF95FD /* Font.swift in Sources */,
 				A5F744022A459D0400DB6FB1 /* APIPath.swift in Sources */,
 				A5F743F02A45948700DB6FB1 /* LoginModel.swift in Sources */,
 				A5F743F62A459C6500DB6FB1 /* APIResponse.swift in Sources */,
 				A5F743F42A459C3000DB6FB1 /* APIClient.swift in Sources */,
 				A5F743FE2A459CC600DB6FB1 /* AuthenticationToken.swift in Sources */,
 				A5F743FC2A459CB300DB6FB1 /* AuthenticationError.swift in Sources */,
+				A5DE758D2A5CFEAD00AF95FD /* NavigationBarButtonType.swift in Sources */,
 				A5EDA1EF2A5BB8A200DB47C9 /* UserInfo.swift in Sources */,
 				A5F743F82A459C8500DB6FB1 /* APIError.swift in Sources */,
 			);
@@ -259,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -316,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

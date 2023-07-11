@@ -144,7 +144,7 @@ extension HTTPHeaders {
     }
     
     mutating func addAuthorization() {
-        let value = "Bearer " + GlobalDataHandler.sharedToken
+        let value = "Bearer " + (SessionManager.shared.getToken() ?? "")
         add(name: HeaderKey.Authorization, value: value)
     }
     

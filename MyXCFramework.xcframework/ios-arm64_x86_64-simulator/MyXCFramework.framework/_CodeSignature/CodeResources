@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		1mzUVw+uthQSYs9uo4Eb+Pl57Ko=
+		</data>
 		<key>Headers/MyXCFramework-Swift.h</key>
 		<data>
-		eQ+hK58ChwG0fzlm/vMZyfLa4Pw=
+		zEUosejE7dFwKraILWPR64vMMiw=
 		</data>
 		<key>Headers/MyXCFramework.h</key>
 		<data>
@@ -14,64 +18,131 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hk2I8DDFpZtfti3rxeK1FNGBaFA=
+		3Zz8xk0UZhU3G7HfSxWGqGUIwW4=
+		</data>
+		<key>IntroductionVC.storyboardc/Info.plist</key>
+		<data>
+		KDtv2kSz3QSSSGLUnhFmDs/sp78=
+		</data>
+		<key>IntroductionVC.storyboardc/IntroductionVC.nib/objects-11.0+.nib</key>
+		<data>
+		d9UFZzRqHHvgVv24t59WzBMgsf8=
+		</data>
+		<key>IntroductionVC.storyboardc/IntroductionVC.nib/runtime.nib</key>
+		<data>
+		d9UFZzRqHHvgVv24t59WzBMgsf8=
+		</data>
+		<key>IntroductionVC.storyboardc/RRV-aw-Qf0-view-q8d-CD-EE8.nib/objects-11.0+.nib</key>
+		<data>
+		bTqOA3I0yDRGzz+PzG8gETS//TA=
+		</data>
+		<key>IntroductionVC.storyboardc/RRV-aw-Qf0-view-q8d-CD-EE8.nib/runtime.nib</key>
+		<data>
+		hsFroguDwgTzKA7eTjefisttmCc=
+		</data>
+		<key>LoginVC.storyboardc/Info.plist</key>
+		<data>
+		1pRNWzVAtQW3fz7ufZ6PveJgQy0=
+		</data>
+		<key>LoginVC.storyboardc/LoginVC.nib/objects-11.0+.nib</key>
+		<data>
+		H61QnB1jZc8QoXrVjQm2zU9+dyc=
+		</data>
+		<key>LoginVC.storyboardc/LoginVC.nib/runtime.nib</key>
+		<data>
+		H61QnB1jZc8QoXrVjQm2zU9+dyc=
+		</data>
+		<key>LoginVC.storyboardc/QG8-cl-Uz9-view-mJ0-Jw-Fa5.nib/objects-11.0+.nib</key>
+		<data>
+		jDqcijOSic+aLqUIp9jsWPwFsqc=
+		</data>
+		<key>LoginVC.storyboardc/QG8-cl-Uz9-view-mJ0-Jw-Fa5.nib/runtime.nib</key>
+		<data>
+		d0kyqEMeGwDc7x336WOYD8XZ7Hw=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		seSaXZMsf6clTeOV3nmAZpIfm4Y=
+		IzR6kPSoSe2hDAM30smo7BLE3cg=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1ksJprNY5SgqD8otBLoPLzLg8cA=
+		CPN050virehKlFupAPDDdBlBv/k=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uMB8vSxOxfRs7bOYSEx5uKJ+qGY=
+		AsXA5LdzB9jfPLtY8CnSSMrGzp8=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1ksJprNY5SgqD8otBLoPLzLg8cA=
+		CPN050virehKlFupAPDDdBlBv/k=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XlRI3MBnBD/mgvt/5rEF9ihKkDg=
+		uHWM+5AbTkKAhXvxOmSTBxLOuXY=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		seSaXZMsf6clTeOV3nmAZpIfm4Y=
+		IzR6kPSoSe2hDAM30smo7BLE3cg=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iETKrtW8iF5mAroqd4CG3CDW8eM=
+		46NwKcHOE6b7/10YmfSOLjHk/Uo=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tV9zyNJ9RBaY0rdqMhzt+EFq60I=
+		KJTlI1A3pFOS7slyBnwIhBa6f2c=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iETKrtW8iF5mAroqd4CG3CDW8eM=
+		46NwKcHOE6b7/10YmfSOLjHk/Uo=
 		</data>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QfHbA8KRm27RyyeQDgnOSf+Ue8s=
+		BXCglCWTOT8dhDHDOV0b5xrmG0w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4MFAIRot9zfQBg1/kwz73SGIzvg=
 		</data>
+		<key>Slide.nib/objects-11.0+.nib</key>
+		<data>
+		BPlLLiQDgvkeEi0MHOIRRIH3tis=
+		</data>
+		<key>Slide.nib/runtime.nib</key>
+		<data>
+		1gH8NBnAFlPSWGebfPsDAKA2I7M=
+		</data>
+		<key>yugothib.ttf</key>
+		<data>
+		jPHegmfCxZfqYwvJ0CPHO2grGKY=
+		</data>
+		<key>yugothil.ttf</key>
+		<data>
+		UriEMVGJ8iGJ2YoBjSbbY3GCM2k=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1mzUVw+uthQSYs9uo4Eb+Pl57Ko=
+			</data>
+			<key>hash2</key>
+			<data>
+			O+4WKZy4fp6B1kdxb2ZAMQ3Vid8Cm/xHqzZWaLw6i50=
+			</data>
+		</dict>
 		<key>Headers/MyXCFramework-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eQ+hK58ChwG0fzlm/vMZyfLa4Pw=
+			zEUosejE7dFwKraILWPR64vMMiw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2JkLLD8lyLx845T1Z3KkArgb5cWhQtTf5pzHAkTLwH4=
+			DPosMdzjaOJmCf1EbDF0bHpHBojoAdQR4U0R+++sZdI=
 			</data>
 		</dict>
 		<key>Headers/MyXCFramework.h</key>
@@ -85,114 +156,224 @@
 			6e0Qhf7ha/FMkqukMbhhrPtMA2XSvN0sNkBKGZZUW/k=
 			</data>
 		</dict>
+		<key>IntroductionVC.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KDtv2kSz3QSSSGLUnhFmDs/sp78=
+			</data>
+			<key>hash2</key>
+			<data>
+			TuoZ6vil/pj14alDHR2B6a0KhbeJCKRnNA3ysc1oOJU=
+			</data>
+		</dict>
+		<key>IntroductionVC.storyboardc/IntroductionVC.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d9UFZzRqHHvgVv24t59WzBMgsf8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Oc1wsJ+q9CLFKJfZ8KwiRGz1HphcdeX59R1QfOZf1Do=
+			</data>
+		</dict>
+		<key>IntroductionVC.storyboardc/IntroductionVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d9UFZzRqHHvgVv24t59WzBMgsf8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Oc1wsJ+q9CLFKJfZ8KwiRGz1HphcdeX59R1QfOZf1Do=
+			</data>
+		</dict>
+		<key>IntroductionVC.storyboardc/RRV-aw-Qf0-view-q8d-CD-EE8.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bTqOA3I0yDRGzz+PzG8gETS//TA=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Ctgz2+z1VYEJvKV48RR+vM89Ml7tQGezGO0KUSTMwU=
+			</data>
+		</dict>
+		<key>IntroductionVC.storyboardc/RRV-aw-Qf0-view-q8d-CD-EE8.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hsFroguDwgTzKA7eTjefisttmCc=
+			</data>
+			<key>hash2</key>
+			<data>
+			sMeHMnDlHLNi2Zb9bemL9oXaCPLIAjdv6NmVaxPfSt0=
+			</data>
+		</dict>
+		<key>LoginVC.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1pRNWzVAtQW3fz7ufZ6PveJgQy0=
+			</data>
+			<key>hash2</key>
+			<data>
+			JFX8sbuSzxciB7InvTGrwt/KTuU6TutFDebYDVjLFmE=
+			</data>
+		</dict>
+		<key>LoginVC.storyboardc/LoginVC.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H61QnB1jZc8QoXrVjQm2zU9+dyc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ITKxIGNfrut7kad6cvGtH+xJ+Jx7wqJ6lZqRGHYdkyU=
+			</data>
+		</dict>
+		<key>LoginVC.storyboardc/LoginVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H61QnB1jZc8QoXrVjQm2zU9+dyc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ITKxIGNfrut7kad6cvGtH+xJ+Jx7wqJ6lZqRGHYdkyU=
+			</data>
+		</dict>
+		<key>LoginVC.storyboardc/QG8-cl-Uz9-view-mJ0-Jw-Fa5.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jDqcijOSic+aLqUIp9jsWPwFsqc=
+			</data>
+			<key>hash2</key>
+			<data>
+			AUWI8HOf0YbOydGtDOxfjb1sKmMaE++pIEAlKHGPqdM=
+			</data>
+		</dict>
+		<key>LoginVC.storyboardc/QG8-cl-Uz9-view-mJ0-Jw-Fa5.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d0kyqEMeGwDc7x336WOYD8XZ7Hw=
+			</data>
+			<key>hash2</key>
+			<data>
+			CHcrYEiDiM6PLebGsUOYxYUgkXFZXY57Cq6XEwdRfUY=
+			</data>
+		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			seSaXZMsf6clTeOV3nmAZpIfm4Y=
+			IzR6kPSoSe2hDAM30smo7BLE3cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMG6Ds+MLk8VjODFcm87wmzThmxu9XuRhNDCEiugtBg=
+			66oHuFvnSEqPkb5/Uv/pj5xwsirorl65vPlA8bVpwvQ=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1ksJprNY5SgqD8otBLoPLzLg8cA=
+			CPN050virehKlFupAPDDdBlBv/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			oJSkzEv8ktv1FxB7g83PkM2cr1fzrUzlj261PvHoBao=
+			s0trWgVAuzdki/nB1kAaWBRPcZDeJs44jK7zH5frqFk=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uMB8vSxOxfRs7bOYSEx5uKJ+qGY=
+			AsXA5LdzB9jfPLtY8CnSSMrGzp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8+EUFpZ3Bn0qh9+8VsmaYE9dnIHKiP0Dy35tidHmRDg=
+			eVu5U7JaQENJwQ1cacuq1PbpJ5vxOKdkPn15tsWCbBs=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1ksJprNY5SgqD8otBLoPLzLg8cA=
+			CPN050virehKlFupAPDDdBlBv/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			oJSkzEv8ktv1FxB7g83PkM2cr1fzrUzlj261PvHoBao=
+			s0trWgVAuzdki/nB1kAaWBRPcZDeJs44jK7zH5frqFk=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XlRI3MBnBD/mgvt/5rEF9ihKkDg=
+			uHWM+5AbTkKAhXvxOmSTBxLOuXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			k1FflNYMX+OXRadWnEZH2fXnllpa/V7jkauzhn4rJlw=
+			8xdTpOIg9eFcbsdVM5IobReigHdxUDVqbo4WdvEhOak=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			seSaXZMsf6clTeOV3nmAZpIfm4Y=
+			IzR6kPSoSe2hDAM30smo7BLE3cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMG6Ds+MLk8VjODFcm87wmzThmxu9XuRhNDCEiugtBg=
+			66oHuFvnSEqPkb5/Uv/pj5xwsirorl65vPlA8bVpwvQ=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iETKrtW8iF5mAroqd4CG3CDW8eM=
+			46NwKcHOE6b7/10YmfSOLjHk/Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Va8bR4dPfNmqPpiM9tRY9Z3GcrWCFuUz19AUGckqaPA=
+			evWCTWyc8s/JuONlHNAf12NJC9NJrI5+cRKE8rAnljk=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tV9zyNJ9RBaY0rdqMhzt+EFq60I=
+			KJTlI1A3pFOS7slyBnwIhBa6f2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			iOuWpSBGVWIr5lq16B/99uzKAcFERZnvfY82uelABQc=
+			OzJ0mZgTU3Cl0vqmMj8I9fYOe1kBBGr1WaGoJcGKwbk=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iETKrtW8iF5mAroqd4CG3CDW8eM=
+			46NwKcHOE6b7/10YmfSOLjHk/Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Va8bR4dPfNmqPpiM9tRY9Z3GcrWCFuUz19AUGckqaPA=
+			evWCTWyc8s/JuONlHNAf12NJC9NJrI5+cRKE8rAnljk=
 			</data>
 		</dict>
 		<key>Modules/MyXCFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QfHbA8KRm27RyyeQDgnOSf+Ue8s=
+			BXCglCWTOT8dhDHDOV0b5xrmG0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			x8uveTJxhajpG8pcQVV11B5HBmDNoj9WSJKvjd4GKhA=
+			LR8IrhMvLbxK5axh+44PoZzD1BqSt68+4Tis+phsq0Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -204,6 +385,50 @@
 			<key>hash2</key>
 			<data>
 			EydqsFNopqGTgKdhRNReAuAG+4xznHzDeIj7bEOkA+Q=
+			</data>
+		</dict>
+		<key>Slide.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BPlLLiQDgvkeEi0MHOIRRIH3tis=
+			</data>
+			<key>hash2</key>
+			<data>
+			4HSuT7DoAMUBVqyEDlBgouHhmbfpz6hXG/xx2vNLXMg=
+			</data>
+		</dict>
+		<key>Slide.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1gH8NBnAFlPSWGebfPsDAKA2I7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			GVbYTWcj+dPebfwwNFfAkjEjwsL2wQv0tbpR9E4pHjk=
+			</data>
+		</dict>
+		<key>yugothib.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jPHegmfCxZfqYwvJ0CPHO2grGKY=
+			</data>
+			<key>hash2</key>
+			<data>
+			/acvfma92DZEva6iaWsykajwQW+eE2kiHzHU516T5sY=
+			</data>
+		</dict>
+		<key>yugothil.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UriEMVGJ8iGJ2YoBjSbbY3GCM2k=
+			</data>
+			<key>hash2</key>
+			<data>
+			/J48+eKfRz0gjxBaVd5BBaeYtadP7P924FUSOx4ACPE=
 			</data>
 		</dict>
 	</dict>

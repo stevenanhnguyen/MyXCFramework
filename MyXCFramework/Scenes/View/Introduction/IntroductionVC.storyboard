@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RRV-aw-Qf0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Screen-->
+        <scene sceneID="QYK-dQ-x5k">
+            <objects>
+                <viewController storyboardIdentifier="IntroductionVC" id="RRV-aw-Qf0" userLabel="Onboarding Screen" customClass="IntroductionVC" customModule="MyXCFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q8d-CD-EE8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbA-3n-zg7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RRV-aw-Qf0" id="VVg-2N-tzv"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="ALI-F6-uUe">
+                                <rect key="frame" x="140" y="736" width="134.5" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.66274509803921566" green="0.66666666666666663" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-iy-pPP">
+                                <rect key="frame" x="160" y="772" width="94" height="40"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="30" minY="10" maxX="30" maxY="10"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0c2-Cg-fme"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uwb-iy-pPP" firstAttribute="centerX" secondItem="0c2-Cg-fme" secondAttribute="centerX" id="0S8-Ha-wkA"/>
+                            <constraint firstAttribute="bottom" secondItem="WbA-3n-zg7" secondAttribute="bottom" id="22n-Yb-lCu"/>
+                            <constraint firstItem="WbA-3n-zg7" firstAttribute="trailing" secondItem="0c2-Cg-fme" secondAttribute="trailing" id="MOz-AU-Ppz"/>
+                            <constraint firstItem="0c2-Cg-fme" firstAttribute="bottom" secondItem="Uwb-iy-pPP" secondAttribute="bottom" constant="50" id="TJa-9M-xOJ"/>
+                            <constraint firstItem="Uwb-iy-pPP" firstAttribute="top" secondItem="ALI-F6-uUe" secondAttribute="bottom" constant="10" id="e4F-ZD-Jy9"/>
+                            <constraint firstItem="ALI-F6-uUe" firstAttribute="centerX" secondItem="0c2-Cg-fme" secondAttribute="centerX" id="lCC-C3-Omk"/>
+                            <constraint firstItem="WbA-3n-zg7" firstAttribute="leading" secondItem="0c2-Cg-fme" secondAttribute="leading" id="lj4-Ne-EIN"/>
+                            <constraint firstItem="WbA-3n-zg7" firstAttribute="top" secondItem="q8d-CD-EE8" secondAttribute="top" id="ogi-YU-cq3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnNext" destination="Uwb-iy-pPP" id="TlR-TN-j5F"/>
+                        <outlet property="pageControl" destination="ALI-F6-uUe" id="QNG-V4-n9r"/>
+                        <outlet property="scrollView" destination="WbA-3n-zg7" id="H7g-Lg-8Am"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxo-jt-Nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="134"/>
+        </scene>
+    </scenes>
+</document>

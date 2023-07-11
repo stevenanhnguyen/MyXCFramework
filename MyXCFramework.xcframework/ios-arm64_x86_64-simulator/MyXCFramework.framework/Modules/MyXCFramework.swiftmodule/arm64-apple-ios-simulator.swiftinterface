@@ -5,8 +5,45 @@
 import Foundation
 @_exported import MyXCFramework
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func showLogin()
+  @_Concurrency.MainActor(unsafe) public func showDashboard()
+  @_Concurrency.MainActor(unsafe) public func presentLogin()
+}
+public struct YuGothicFont : MyXCFramework.FontType {
+  public static var pointSize: CoreFoundation.CGFloat {
+    get
+  }
+  public static var thin: UIKit.UIFont {
+    get
+  }
+  public static var light: UIKit.UIFont {
+    get
+  }
+  public static var regular: UIKit.UIFont {
+    get
+  }
+  public static var medium: UIKit.UIFont {
+    get
+  }
+  public static var bold: UIKit.UIFont {
+    get
+  }
+  public static func thin(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func light(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func regular(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func medium(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func bold(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public struct LoginResponse : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
@@ -27,6 +64,73 @@ public class UserAuthentication {
   public func changePassword(password: Swift.String, pwConfirmation: Swift.String, completion: @escaping (MyXCFramework.ChangePasswordResponse?, MyXCFramework.APIError?) -> Swift.Void)
   public func logout()
   @objc deinit
+}
+@objc(DynamicFontTypeDelegate) public protocol DynamicFontTypeDelegate {
+  @objc func dynamicFontType(dynamicFontType: MyXCFramework.DynamicFontType)
+}
+@_inheritsConvenienceInitializers @objc(DynamicFontType) open class DynamicFontType : ObjectiveC.NSObject {
+  weak open var delegate: MyXCFramework.DynamicFontTypeDelegate?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class LoginVC : MyXCFramework.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DefaultsKey {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Key<ValueType> : MyXCFramework.DefaultsKey where ValueType : Swift.Decodable, ValueType : Swift.Encodable {
+  public init(_ key: Swift.String)
+  @objc deinit
+}
+final public class Defaults {
+  public static let shared: MyXCFramework.Defaults
+  public init(userDefaults: Foundation.UserDefaults = UserDefaults.standard)
+  final public func clear<ValueType>(_ key: MyXCFramework.Key<ValueType>) where ValueType : Swift.Decodable, ValueType : Swift.Encodable
+  final public func has<ValueType>(_ key: MyXCFramework.Key<ValueType>) -> Swift.Bool where ValueType : Swift.Decodable, ValueType : Swift.Encodable
+  final public func get<ValueType>(for key: MyXCFramework.Key<ValueType>) -> ValueType? where ValueType : Swift.Decodable, ValueType : Swift.Encodable
+  final public func set<ValueType>(_ value: ValueType, for key: MyXCFramework.Key<ValueType>) where ValueType : Swift.Decodable, ValueType : Swift.Encodable
+  @objc deinit
+}
+public struct RobotoFont : MyXCFramework.FontType {
+  public static var pointSize: CoreFoundation.CGFloat {
+    get
+  }
+  public static var thin: UIKit.UIFont {
+    get
+  }
+  public static var light: UIKit.UIFont {
+    get
+  }
+  public static var regular: UIKit.UIFont {
+    get
+  }
+  public static var medium: UIKit.UIFont {
+    get
+  }
+  public static var bold: UIKit.UIFont {
+    get
+  }
+  public static func thin(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func light(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func regular(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func medium(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func bold(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+public protocol FontType {
+  static func regular(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  static func medium(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  static func bold(with size: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+public struct Font {
+  public static let pointSize: CoreFoundation.CGFloat
+  public static func systemFont(ofSize size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func boldSystemFont(ofSize size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func italicSystemFont(ofSize size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func loadFontIfNeeded(name: Swift.String)
 }
 public enum APIPath : Swift.String {
   case login

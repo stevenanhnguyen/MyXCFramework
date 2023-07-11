@@ -6,6 +6,699 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "YuGothicFont",
+        "printedName": "YuGothicFont",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pointSize",
+            "printedName": "pointSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV9pointSize14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV9pointSize12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV9pointSize14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV9pointSize12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thin",
+            "printedName": "thin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV4thinSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV4thinSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV4thinSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV4thinSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV5lightSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV5lightSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV5lightSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV5lightSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regular",
+            "printedName": "regular",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV7regularSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV7regularSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV7regularSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV7regularSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV6mediumSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV6mediumSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV6mediumSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV6mediumSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bold",
+            "printedName": "bold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework12YuGothicFontV4boldSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV4boldSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework12YuGothicFontV4boldSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework12YuGothicFontV4boldSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "thin",
+            "printedName": "thin(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework12YuGothicFontV4thin4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV4thin4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "light",
+            "printedName": "light(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework12YuGothicFontV5light4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV5light4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "regular",
+            "printedName": "regular(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework12YuGothicFontV7regular4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV7regular4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "medium",
+            "printedName": "medium(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework12YuGothicFontV6medium4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV6medium4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bold",
+            "printedName": "bold(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework12YuGothicFontV4bold4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework12YuGothicFontV4bold4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework12YuGothicFontV",
+        "mangledName": "$s13MyXCFramework12YuGothicFontV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FontType",
+            "printedName": "FontType",
+            "usr": "s:13MyXCFramework8FontTypeP",
+            "mangledName": "$s13MyXCFramework8FontTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseViewController",
+        "printedName": "BaseViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController(im)viewDidLoad",
+            "mangledName": "$s13MyXCFramework18BaseViewControllerC11viewDidLoadyyF",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseViewController",
+                "printedName": "MyXCFramework.BaseViewController",
+                "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s13MyXCFramework18BaseViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyXCFramework.BaseViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BaseViewController",
+                    "printedName": "MyXCFramework.BaseViewController",
+                    "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController(im)initWithCoder:",
+            "mangledName": "$s13MyXCFramework18BaseViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyXCFramework@objc(cs)BaseViewController",
+        "mangledName": "$s13MyXCFramework18BaseViewControllerC",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -589,12 +1282,1645 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicFontTypeDelegate",
+        "printedName": "DynamicFontTypeDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dynamicFontType",
+            "printedName": "dynamicFontType(dynamicFontType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicFontType",
+                "printedName": "MyXCFramework.DynamicFontType",
+                "usr": "c:@M@MyXCFramework@objc(cs)DynamicFontType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyXCFramework@objc(pl)DynamicFontTypeDelegate(im)dynamicFontTypeWithDynamicFontType:",
+            "mangledName": "$s13MyXCFramework23DynamicFontTypeDelegateP07dynamicdE0ADyAA0cdE0C_tF",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyXCFramework.DynamicFontTypeDelegate>",
+            "sugared_genericSig": "<Self where Self : MyXCFramework.DynamicFontTypeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MyXCFramework@objc(pl)DynamicFontTypeDelegate",
+        "mangledName": "$s13MyXCFramework23DynamicFontTypeDelegateP",
+        "moduleName": "MyXCFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "DynamicFontTypeDelegate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicFontType",
+        "printedName": "DynamicFontType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "MyXCFramework.DynamicFontTypeDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvp",
+            "mangledName": "$s13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvp",
+            "moduleName": "MyXCFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MyXCFramework.DynamicFontTypeDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DynamicFontTypeDelegate",
+                        "printedName": "MyXCFramework.DynamicFontTypeDelegate",
+                        "usr": "c:@M@MyXCFramework@objc(pl)DynamicFontTypeDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvg",
+                "mangledName": "$s13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvg",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MyXCFramework.DynamicFontTypeDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DynamicFontTypeDelegate",
+                        "printedName": "MyXCFramework.DynamicFontTypeDelegate",
+                        "usr": "c:@M@MyXCFramework@objc(pl)DynamicFontTypeDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvs",
+                "mangledName": "$s13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvs",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvM",
+                "mangledName": "$s13MyXCFramework15DynamicFontTypeC8delegateAA0cdE8Delegate_pSgvM",
+                "moduleName": "MyXCFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicFontType",
+                "printedName": "MyXCFramework.DynamicFontType",
+                "usr": "c:@M@MyXCFramework@objc(cs)DynamicFontType"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyXCFramework@objc(cs)DynamicFontType(im)init",
+            "mangledName": "$s13MyXCFramework15DynamicFontTypeCACycfc",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyXCFramework@objc(cs)DynamicFontType",
+        "mangledName": "$s13MyXCFramework15DynamicFontTypeC",
+        "moduleName": "MyXCFramework",
+        "isOpen": true,
+        "objc_name": "DynamicFontType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MyXCFramework",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoginVC",
+        "printedName": "LoginVC",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyXCFramework@objc(cs)LoginVC(im)viewDidLoad",
+            "mangledName": "$s13MyXCFramework7LoginVCC11viewDidLoadyyF",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoginVC",
+                "printedName": "MyXCFramework.LoginVC",
+                "usr": "c:@M@MyXCFramework@objc(cs)LoginVC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyXCFramework@objc(cs)LoginVC(im)initWithNibName:bundle:",
+            "mangledName": "$s13MyXCFramework7LoginVCC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyXCFramework.LoginVC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginVC",
+                    "printedName": "MyXCFramework.LoginVC",
+                    "usr": "c:@M@MyXCFramework@objc(cs)LoginVC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyXCFramework@objc(cs)LoginVC(im)initWithCoder:",
+            "mangledName": "$s13MyXCFramework7LoginVCC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MyXCFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyXCFramework@objc(cs)LoginVC",
+        "mangledName": "$s13MyXCFramework7LoginVCC",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@MyXCFramework@objc(cs)BaseViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MyXCFramework.BaseViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultsKey",
+        "printedName": "DefaultsKey",
+        "declKind": "Class",
+        "usr": "s:13MyXCFramework11DefaultsKeyC",
+        "mangledName": "$s13MyXCFramework11DefaultsKeyC",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Key",
+        "printedName": "Key",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Key",
+                "printedName": "MyXCFramework.Key<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13MyXCFramework3KeyC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework3KeyCyACyxGSScfc",
+            "mangledName": "$s13MyXCFramework3KeyCyACyxGSScfc",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13MyXCFramework3KeyC",
+        "mangledName": "$s13MyXCFramework3KeyC",
+        "moduleName": "MyXCFramework",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:13MyXCFramework11DefaultsKeyC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "MyXCFramework.DefaultsKey"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Defaults",
+        "printedName": "Defaults",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Defaults",
+                "printedName": "MyXCFramework.Defaults",
+                "usr": "s:13MyXCFramework8DefaultsC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework8DefaultsC6sharedACvpZ",
+            "mangledName": "$s13MyXCFramework8DefaultsC6sharedACvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Defaults",
+                    "printedName": "MyXCFramework.Defaults",
+                    "usr": "s:13MyXCFramework8DefaultsC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework8DefaultsC6sharedACvgZ",
+                "mangledName": "$s13MyXCFramework8DefaultsC6sharedACvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userDefaults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Defaults",
+                "printedName": "MyXCFramework.Defaults",
+                "usr": "s:13MyXCFramework8DefaultsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserDefaults",
+                "printedName": "Foundation.UserDefaults",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSUserDefaults"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13MyXCFramework8DefaultsC04userC0ACSo06NSUserC0C_tcfc",
+            "mangledName": "$s13MyXCFramework8DefaultsC04userC0ACSo06NSUserC0C_tcfc",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Key",
+                "printedName": "MyXCFramework.Key<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13MyXCFramework3KeyC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8DefaultsC5clearyyAA3KeyCyxGSeRzSERzlF",
+            "mangledName": "$s13MyXCFramework8DefaultsC5clearyyAA3KeyCyxGSeRzSERzlF",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "has",
+            "printedName": "has(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Key",
+                "printedName": "MyXCFramework.Key<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13MyXCFramework3KeyC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8DefaultsC3hasySbAA3KeyCyxGSeRzSERzlF",
+            "mangledName": "$s13MyXCFramework8DefaultsC3hasySbAA3KeyCyxGSeRzSERzlF",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Key",
+                "printedName": "MyXCFramework.Key<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13MyXCFramework3KeyC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8DefaultsC3get3forxSgAA3KeyCyxG_tSeRzSERzlF",
+            "mangledName": "$s13MyXCFramework8DefaultsC3get3forxSgAA3KeyCyxG_tSeRzSERzlF",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Key",
+                "printedName": "MyXCFramework.Key<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13MyXCFramework3KeyC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8DefaultsC3set_3foryx_AA3KeyCyxGtSeRzSERzlF",
+            "mangledName": "$s13MyXCFramework8DefaultsC3set_3foryx_AA3KeyCyxGtSeRzSERzlF",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<ValueType where ValueType : Swift.Decodable, ValueType : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13MyXCFramework8DefaultsC",
+        "mangledName": "$s13MyXCFramework8DefaultsC",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RobotoFont",
+        "printedName": "RobotoFont",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pointSize",
+            "printedName": "pointSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV9pointSize14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV9pointSize12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV9pointSize14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV9pointSize12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thin",
+            "printedName": "thin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV4thinSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV4thinSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV4thinSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV4thinSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV5lightSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV5lightSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV5lightSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV5lightSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regular",
+            "printedName": "regular",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV7regularSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV7regularSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV7regularSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV7regularSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV6mediumSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV6mediumSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV6mediumSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV6mediumSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bold",
+            "printedName": "bold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework10RobotoFontV4boldSo6UIFontCvpZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV4boldSo6UIFontCvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework10RobotoFontV4boldSo6UIFontCvgZ",
+                "mangledName": "$s13MyXCFramework10RobotoFontV4boldSo6UIFontCvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "thin",
+            "printedName": "thin(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework10RobotoFontV4thin4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV4thin4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "light",
+            "printedName": "light(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework10RobotoFontV5light4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV5light4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "regular",
+            "printedName": "regular(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework10RobotoFontV7regular4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV7regular4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "medium",
+            "printedName": "medium(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework10RobotoFontV6medium4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV6medium4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bold",
+            "printedName": "bold(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework10RobotoFontV4bold4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework10RobotoFontV4bold4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework10RobotoFontV",
+        "mangledName": "$s13MyXCFramework10RobotoFontV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FontType",
+            "printedName": "FontType",
+            "usr": "s:13MyXCFramework8FontTypeP",
+            "mangledName": "$s13MyXCFramework8FontTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FontType",
+        "printedName": "FontType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "regular",
+            "printedName": "regular(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8FontTypeP7regular4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework8FontTypeP7regular4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyXCFramework.FontType>",
+            "sugared_genericSig": "<Self where Self : MyXCFramework.FontType>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "medium",
+            "printedName": "medium(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8FontTypeP6medium4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework8FontTypeP6medium4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyXCFramework.FontType>",
+            "sugared_genericSig": "<Self where Self : MyXCFramework.FontType>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bold",
+            "printedName": "bold(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework8FontTypeP4bold4withSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework8FontTypeP4bold4withSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyXCFramework.FontType>",
+            "sugared_genericSig": "<Self where Self : MyXCFramework.FontType>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13MyXCFramework8FontTypeP",
+        "mangledName": "$s13MyXCFramework8FontTypeP",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Font",
+        "printedName": "Font",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pointSize",
+            "printedName": "pointSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13MyXCFramework4FontV9pointSize14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s13MyXCFramework4FontV9pointSize12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13MyXCFramework4FontV9pointSize14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s13MyXCFramework4FontV9pointSize12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "MyXCFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "systemFont",
+            "printedName": "systemFont(ofSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework4FontV06systemC06ofSizeSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework4FontV06systemC06ofSizeSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "boldSystemFont",
+            "printedName": "boldSystemFont(ofSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework4FontV010boldSystemC06ofSizeSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework4FontV010boldSystemC06ofSizeSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "italicSystemFont",
+            "printedName": "italicSystemFont(ofSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework4FontV012italicSystemC06ofSizeSo6UIFontC14CoreFoundation7CGFloatV_tFZ",
+            "mangledName": "$s13MyXCFramework4FontV012italicSystemC06ofSizeSo6UIFontC12CoreGraphics7CGFloatV_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadFontIfNeeded",
+            "printedName": "loadFontIfNeeded(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13MyXCFramework4FontV04loadC8IfNeeded4nameySS_tFZ",
+            "mangledName": "$s13MyXCFramework4FontV04loadC8IfNeeded4nameySS_tFZ",
+            "moduleName": "MyXCFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13MyXCFramework4FontV",
+        "mangledName": "$s13MyXCFramework4FontV",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -1055,6 +3381,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "UserInfoResponse",
         "printedName": "UserInfoResponse",
@@ -1405,73 +3741,739 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIViewController",
+        "printedName": "UIViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showLogin",
+            "printedName": "showLogin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13MyXCFrameworkE9showLoginyyF",
+            "mangledName": "$sSo16UIViewControllerC13MyXCFrameworkE9showLoginyyF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showDashboard",
+            "printedName": "showDashboard()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13MyXCFrameworkE13showDashboardyyF",
+            "mangledName": "$sSo16UIViewControllerC13MyXCFrameworkE13showDashboardyyF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentLogin",
+            "printedName": "presentLogin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13MyXCFrameworkE12presentLoginyyF",
+            "mangledName": "$sSo16UIViewControllerC13MyXCFrameworkE12presentLoginyyF",
+            "moduleName": "MyXCFramework",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIViewController",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIViewController",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Utilities\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
+      "length": 14,
+      "value": "\"DEVICE_TOKEN\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Utilities\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 11,
+      "value": "\"FCM_TOKEN\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Utilities\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1079,
+      "length": 12,
+      "value": "\"TOKEN_AUTH\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Base\/BaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 261,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Base\/BaseViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1371,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1469,
       "length": 19,
       "value": "\"profile_photo_url\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1371,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 1469,
       "length": 19,
       "value": "\"profile_photo_url\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 3446,
       "length": 19,
       "value": "\"profile_photo_url\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserAuthentication.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 3446,
       "length": 19,
       "value": "\"profile_photo_url\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Utilities\/GlobalDataHandler.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Extension\/UIColor+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 451,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Extension\/UIColor+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1256,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 195,
+      "length": 12,
+      "value": "0.3921568627"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 216,
+      "length": 12,
+      "value": "0.7176470588"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 236,
+      "length": 12,
+      "value": "0.2705882353"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 257,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 317,
+      "length": 12,
+      "value": "0.1098039216"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 338,
+      "length": 12,
+      "value": "0.7529411765"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 358,
+      "length": 12,
+      "value": "0.1254901961"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 379,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 439,
+      "length": 13,
+      "value": "0.09019607843"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 461,
+      "length": 12,
+      "value": "0.6274509804"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 481,
+      "length": 12,
+      "value": "0.5254901961"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 502,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 562,
+      "length": 12,
+      "value": "0.4156862745"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 583,
+      "length": 11,
+      "value": "0.737254902"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 602,
+      "length": 12,
+      "value": "0.7176470588"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 623,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 688,
+      "length": 12,
+      "value": "0.4352941176"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 709,
+      "length": 12,
+      "value": "0.7764705882"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 729,
+      "length": 12,
+      "value": "0.8901960784"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 750,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 810,
+      "length": 12,
+      "value": "0.3529411765"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 831,
+      "length": 12,
+      "value": "0.6392156863"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 851,
+      "length": 12,
+      "value": "0.9058823529"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 872,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 932,
+      "length": 12,
+      "value": "0.4352941176"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 953,
+      "length": 12,
+      "value": "0.6039215686"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 973,
+      "length": 12,
+      "value": "0.8588235294"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 994,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1054,
+      "length": 12,
+      "value": "0.4823529412"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1075,
+      "length": 12,
+      "value": "0.7215686275"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1095,
+      "length": 12,
+      "value": "0.8078431373"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1116,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1181,
+      "length": 12,
+      "value": "0.9921568627"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1202,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1213,
+      "length": 12,
+      "value": "0.3960784314"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1234,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1294,
+      "length": 12,
+      "value": "0.9176470588"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1315,
+      "length": 11,
+      "value": "0.431372549"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1334,
+      "length": 12,
+      "value": "0.3882352941"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1420,
+      "length": 11,
+      "value": "0.662745098"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1440,
+      "length": 12,
+      "value": "0.6666666667"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1460,
+      "length": 12,
+      "value": "0.6705882353"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1541,
+      "length": 12,
+      "value": "0.8666666667"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1562,
+      "length": 12,
+      "value": "0.8666666667"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1582,
+      "length": 12,
+      "value": "0.8666666667"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1603,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1663,
+      "length": 12,
+      "value": "0.9921568627"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1684,
+      "length": 11,
+      "value": "0.662745098"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1703,
+      "length": 12,
+      "value": "0.1607843137"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1784,
+      "length": 12,
+      "value": "0.8156862745"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1805,
+      "length": 12,
+      "value": "0.6509803922"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 1825,
+      "length": 12,
+      "value": "0.3921568627"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1846,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Defaults.swift",
       "kind": "StringLiteral",
-      "offset": 429,
+      "offset": 1394,
+      "length": 3,
+      "value": "\"MyXCFramework.Key\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/View\/Introduction\/IntroductionVC.swift",
+      "kind": "Array",
+      "offset": 496,
       "length": 2,
-      "value": "\"\""
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/View\/Introduction\/IntroductionVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 539,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/View\/Introduction\/IntroductionVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6857,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 49,
+      "value": "\"[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 18,
+      "value": "\"(?=.*[A-Z]).{8,}\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 18,
+      "value": "\".*[^A-Za-z0-9].*\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 21,
+      "value": "\"(?=.*[0-9]).{10,16}\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 10,
+      "value": "\"^[0-9]*$\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 21,
+      "value": "\"dd-MM-yyyy HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
+      "length": 12,
+      "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/Pattern.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 10,
+      "value": "\"HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Resource\/DynamicFont\/Font.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1834,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/APIPath.swift",
@@ -1656,84 +4658,189 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 13,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 500,
+      "length": 14,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 13,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 500,
+      "length": 14,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 13,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Scenes\/Common\/NavigationBarButtonType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 500,
+      "length": 14,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 19,
       "value": "\"email_verified_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 17,
       "value": "\"current_team_id\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 20,
       "value": "\"profile_photo_path\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 661,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 699,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 19,
       "value": "\"profile_photo_url\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 19,
       "value": "\"email_verified_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 17,
       "value": "\"current_team_id\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 20,
       "value": "\"profile_photo_path\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 661,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 699,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/Authentication\/UserInfo.swift",
+      "filePath": "\/Users\/tuna\/Desktop\/MyXCFramework\/MyXCFramework\/API\/AuthenticationAPI\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 19,
